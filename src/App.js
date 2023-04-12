@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Layout } from './components';
-import { Classes, Contact, FAQ, Fees, Groups, Landing, MABucks, MAHerts, NotFound } from './pages';
+import { AdultClasses, Contact, FAQ, Fees, Groups, KidsClasses, Landing, MABucks, MAHerts, NotFound } from './pages';
 import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronUp } from '@fortawesome/free-solid-svg-icons'
@@ -17,7 +17,8 @@ function App() {
           <Route path="mabucks" element={<MABucks />} />
           <Route path="faq" element={<FAQ />} />
           <Route path="fees" element={<Fees />} />
-          <Route path="classes" element={<Classes />} />
+          <Route path="adultclasses" element={<AdultClasses />} />
+          <Route path="kidsclasses" element={<KidsClasses />} />
           <Route path="groups" element={<Groups />} />
           <Route path="contact" element={<Contact />} />
           <Route path="notfound" element={<NotFound />} />

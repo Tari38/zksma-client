@@ -1,4 +1,4 @@
-export default function Classes() {
+export default function AdultClasses() {
     return (
         <div>
             Classes

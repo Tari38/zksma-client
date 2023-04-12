@@ -1,0 +1,23 @@
+#btn-adults-classes, #btn-kids-classes {
+    background-color: rgba(237, 28, 35, 0.76);
+    border: 2px solid #fff;
+    border-radius: 20px;
+    justify-content: center;
+    align-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: #000 2px 2px;
+    height: 100px;
+    width: 180px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: auto;
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+#btn-adults-classes:hover, #btn-kids-classes:hover {
+    background-color: #000;
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}

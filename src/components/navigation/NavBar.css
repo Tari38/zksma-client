@@ -5,9 +5,9 @@
 }
 
 .nav-logo {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+    max-height: 150px;
+    width: auto;
+    padding: 10px;
 }
 
 .zks {

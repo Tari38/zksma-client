@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card, CardGroup, Col } from "react-bootstrap";
+import { Button, Card, CardGroup, Col, Row } from "react-bootstrap";
 import LogoWithText from "../assets/ZKS Martial Arts.png";
 import ZKSLogo from "../assets/zks.jpg";
 import MAStyles from "../assets/silhouette-icons.png";
@@ -9,6 +9,9 @@ import BucksVenuesModal from "../components/modals/Venue_Bucks";
 import HertsVenuesModal from "../components/modals/Venue_Herts";
 import "./pages.css";
 import FreeTrialModal from "../components/modals/Free_Trial";
+import { LandingCarousel } from "../components";
+import ClassesKids from "../components/cards/Classes_Kids";
+import ClassesAdults from "../components/cards/Classes_Adults";
 
 export default function Landing() {
     const [modalShowFreeTrial, setModalShowFreeTrial] = React.useState(false);
@@ -17,21 +20,31 @@ export default function Landing() {
     return (
         <>
         <main>
-            <section id="hero">
-              
+            <section id="cta">
+                <Row>
                     <Col className="hero-col">
-                        <Button className="free-trial-btn" onClick={() => setModalShowFreeTrial(true)}>Free Trial</Button>
+                        <Button className="free-trial-btn" onClick={() => setModalShowFreeTrial(true)}>Book a Free Trial</Button>
                     </Col>
                     <Col className="hero-col">
+                        <Button className="find-us-btn" href="#venues">Members Area</Button> 
+                    </Col>
+                </Row>
+            </section>
+            <section id="hero">
+                <LandingCarousel />
+                    {/* <Col className="hero-col">
                         <img className="logo-with-text" 
                         src={ LogoWithText } 
                         alt="main zks martial arts logo with text that reads 'for the whole family'">            
                         </img>
-                    </Col>
-                    <Col className="hero-col">
-                        <Button className="find-us-btn" href="#venues">Find Us</Button> 
-                    </Col>
+                    </Col> */}
                 
+            </section>
+            <section id="classes">
+                <Row className="classes-row">
+                    <ClassesKids />                
+                    <ClassesAdults />
+                </Row>
             </section>
             <section>
             <CardGroup className="landing-card-group">

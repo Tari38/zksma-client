@@ -1,0 +1,15 @@
+.kids-classes-card, .adults-classes-card {
+    background-color: #000;
+    border-radius: 20px;
+    border: #ed1c24 solid 4px;
+    max-height: 300px;
+    width: 300px;
+    margin: auto;
+    padding: 30px;
+    justify-content: center;
+    align-content: center;    
+}
+
+.kids-classes-card:hover, .adults-classes-card:hover {
+    background-color: #ed1c24;
+}
