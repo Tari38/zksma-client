@@ -1,0 +1,207 @@
+main {
+    padding: 10px;
+    background-image: radial-gradient(circle, #ffffff, #fbfbfb, #f7f7f7, #f4f4f4, #f0f0f0, #ebebeb, #e7e7e7, #e2e2e2, #dcdcdc, #d5d5d5, #cfcfcf, #c9c9c9);
+}
+
+#hero {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.hero-col {
+    justify-content: center;
+    align-content: center;
+    margin: auto; 
+    width: auto;   
+}
+
+#about, #classes {
+    background-image: linear-gradient(to top, #6b1316, #781418, #86161a, #93171b, #a1181d, #ac191e, #b6191f, #c11a20, #cc1b21, #d71b22, #e21c23, #ed1c24);
+    color: #fff;
+    border-color: #fff;
+}
+
+.landing-card-group {
+    border-radius: 10px;
+    box-shadow: #530808 2px 2px 4px;
+    background-color: #000;
+    padding: 5px 5px 15px 5px;
+}
+
+.card-group-col {
+    height: 360px;
+}
+
+.landing-card {
+    border-radius: 10px;
+    border: #ed1c24 solid 2px;
+    height: 360px;
+    margin: 5px;
+}
+
+.card-group-img {
+    min-height: 140px;
+    max-height: 160px;
+    width: auto;
+    border-radius: 10px 10px 0 0;
+    /* padding: 5px; */
+}
+
+.card-header {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo-with-text {
+    max-height: 300px;
+}
+
+#bucks, #herts {
+    background-image: url("../assets/Buckinghamshire_Badge.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 160px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+    padding: 10px;
+    justify-content: center;
+    border: #ed1c24 4px solid;
+    border-radius: 10px;
+    box-shadow: #530808 2px 2px 4px;
+  }
+  
+#herts {
+    background-image: url("../assets/Hertfordshire_Badge.png");
+}
+
+.venue-heading {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#venues {
+    height: auto;
+    background-image: url("../assets/dojo-vector-illustration.webp");
+    background-color: #000;
+    color: #f30707;
+    padding: 10px;
+}
+
+.bucks-btn, .herts-btn, .free-trial-btn, .find-us-btn {
+    background-color: rgba(237, 28, 35, 0.76);
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: #000 2px 2px;
+    height: 50px;
+    width: auto;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.free-trial-btn, .find-us-btn {
+    max-width: 100%;
+    box-shadow: #530808 2px 2px 4px;
+    margin: auto;
+    height: auto;
+    padding: 10px 20px;
+}
+
+.free-trial-btn:hover, .find-us-btn:hover {
+    background-color: #000;
+    border: 2px solid #fff;
+}
+
+.bucks-btn:active, .herts-btn:active, .free-trial-btn:active, .find-us-btn:active {
+    background-color: rgba(175, 47, 51, 0.76);
+}
+
+@media only screen and (max-width: 500px) {
+    #bucks, #herts {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        font-size: 16px;
+    }
+    .logo-with-text {
+        max-height: 200px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #hero {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .card-group-col {
+        width: 100%;
+    }
+    #bucks, #herts {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .card-group-col {
+        width: 50%;
+    }
+    #bucks, #herts {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 701px) {
+    #bucks, #herts {
+        width: auto;
+    }
+    #venues {
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media only screen and (min-width: 990px) {
+    .card-group-col {
+        width: 25%;
+    }
+    #bucks, #herts {
+        width: 90%
+    }
+}
+
+
+/* FAQ PAGE */
+
+#common-qs {
+    text-align: left;
+    padding: 20px;
+    background-color: #000;
+}
+
+.main {
+    background-image: radial-gradient(circle, #ffffff, #fbfbfb, #f7f7f7, #f4f4f4, #f0f0f0, #ebebeb, #e7e7e7, #e2e2e2, #dcdcdc, #d5d5d5, #cfcfcf, #c9c9c9);
+    padding: 10px;
+}
+
+.accordion-header {
+    
+    text-align: center;
+}
+
+.accordion-body {
+    background-image: linear-gradient(to top, #6b1316, #781418, #86161a, #93171b, #a1181d, #ac191e, #b6191f, #c11a20, #cc1b21, #d71b22, #e21c23, #ed1c24);
+    color: #fff;
+}

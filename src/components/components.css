@@ -1,0 +1,97 @@
+.header, .footer {
+    background-image: linear-gradient(to bottom, #6b1316, #781418, #86161a, #93171b, #a1181d, #ac191e, #b6191f, #c11a20, #cc1b21, #d71b22, #e21c23, #ed1c24);   
+    border-bottom: #6b1316 4px solid; 
+}
+
+.footer {
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    margin: auto;
+}
+
+.footer-card-group {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+}
+
+.footer-card {
+    background-color: rgba(0, 0, 0, 0.26);
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+}
+
+.social-icon-col {    
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #000;
+}
+
+.brand-icon {
+    height: 27px;
+    width: auto;
+    margin: 5px;
+}
+
+.brand-icon:hover {
+    background-color: #000;
+    border-radius: 50%;
+    height: 27px;
+    width: auto;
+}
+
+.address {
+    text-align: left;
+}
+
+.social {
+    text-align: center;
+    margin: auto;
+}
+
+.contact {
+    text-align: right;
+}
+
+.bottom-row {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+
+@media only screen and (max-width: 500px) {
+    .address, .contact, .brand-icon {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;        
+    }
+
+    .footer-card {
+        width: 100%;
+    }
+    
+}

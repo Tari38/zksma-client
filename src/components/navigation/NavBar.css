@@ -1,0 +1,39 @@
+.navbar {
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+}
+
+.nav-logo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.zks {
+    font-family: 'Patua One', cursive;
+    font-size: 64px;
+    letter-spacing: 0.8rem;
+    -webkit-text-stroke: #fff;
+    -webkit-text-stroke-width: 2px;
+    margin-bottom: -25px;
+}
+
+.nav-logo-p {
+    color: #fff;
+    font-size: 24px;
+    text-shadow: #000 2px 2px;
+    letter-spacing: 1.1px;
+}
+
+.nav-toggler {
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.nav-item {
+    color: #fff;
+    font-size: 24px;
+    margin: 20px;
+}
