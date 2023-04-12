@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Card, CardGroup, Col, Row } from "react-bootstrap";
-import LogoWithText from "../assets/ZKS Martial Arts.png";
+// import LogoWithText from "../assets/ZKS Martial Arts.png";
 import ZKSLogo from "../assets/zks.jpg";
 import MAStyles from "../assets/silhouette-icons.png";
 import MA4Kids from "../assets/ma-for-kids.jpg";
