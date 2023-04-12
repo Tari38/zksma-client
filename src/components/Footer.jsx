@@ -61,7 +61,7 @@ export default function Footer() {
             <Col className="footer-logo"> 
                 <img src={footerLogo} alt="footer zks logo" />
             </Col>
-            <Col className="copyright">&copy; 2023 ZKS MA | Powered by  
+            <Col className="copyright">&copy; 2023 ZKS MA | Built by <a href="https://www.sdwebdevelopment.co.uk/" target="__blank">SDWebDevelopment</a> | Powered by  
                 <a title="SmallShout" href="http://www.smallshout.co.uk/"> SmallShout</a>
             </Col>   
         </Row>     

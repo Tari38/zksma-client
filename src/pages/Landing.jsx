@@ -8,8 +8,10 @@ import MABenefits from "../assets/benefits.jpg";
 import BucksVenuesModal from "../components/modals/Venue_Bucks";
 import HertsVenuesModal from "../components/modals/Venue_Herts";
 import "./pages.css";
+import FreeTrialModal from "../components/modals/Free_Trial";
 
 export default function Landing() {
+    const [modalShowFreeTrial, setModalShowFreeTrial] = React.useState(false);
     const [modalShowBucks, setModalShowBucks] = React.useState(false);
     const [modalShowHerts, setModalShowHerts] = React.useState(false);
     return (
@@ -18,7 +20,7 @@ export default function Landing() {
             <section id="hero">
               
                     <Col className="hero-col">
-                        <Button className="free-trial-btn" href="https://www.smallshout.co.uk/members/register/new_registration.aspx?oid=1456145&I=0">Free Trial</Button>
+                        <Button className="free-trial-btn" onClick={() => setModalShowFreeTrial(true)}>Free Trial</Button>
                     </Col>
                     <Col className="hero-col">
                         <img className="logo-with-text" 
@@ -101,6 +103,10 @@ export default function Landing() {
         <HertsVenuesModal
             show={modalShowHerts}
             onHide={() => setModalShowHerts(false)}
+        />
+        <FreeTrialModal
+            show={modalShowFreeTrial}
+            onHide={() => setModalShowFreeTrial(false)}
         />
       </>
     )
