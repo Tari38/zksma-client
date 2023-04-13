@@ -1,15 +1,18 @@
 .header {
     background-color: #000;    
+    background-image: url("../../../assets/backgrounds/clean-textile.png");
     border-bottom: #6b1316 4px solid; 
 }
 
 .header-bar-top {
     background-color: #ed1c24;
+    background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
     height: 30px;
 }
 
 .contact-bar {
     background-color: #ed1c24;
+    background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
     color: #fff;
     display: flex;
     height: 30px;
@@ -20,4 +23,8 @@
 
 .contact-bar > p {
     margin: 0 20px;
+}
+
+.contact-link:hover {
+    color:#000;
 }

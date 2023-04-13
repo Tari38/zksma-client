@@ -17,7 +17,7 @@ export default function BucksVenuesModal(props) {
       <Modal.Body>
         <h4>Current Venues</h4>
         <ul>
-          <li></li>
+          <li>Aylesbury HQ</li>
         </ul>
       </Modal.Body>
       <Modal.Footer>

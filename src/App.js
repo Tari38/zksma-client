@@ -1,11 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Layout } from './components';
-import { AdultClasses, Contact, FAQ, Fees, Groups, KidsClasses, Landing, MABucks, MAHerts, NotFound } from './pages';
+import { About, AdultClasses, Contact, FAQ, Fees, Groups, KidsClasses, Landing, MABucks, MAHerts, NotFound } from './pages';
 import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleChevronUp } from '@fortawesome/free-solid-svg-icons'
-
+import { faCircleChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   return (
@@ -13,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Landing />} />
+          <Route path="about" element={<About />} />
           <Route path="maherts" element={<MAHerts />} />
           <Route path="mabucks" element={<MABucks />} />
           <Route path="faq" element={<FAQ />} />

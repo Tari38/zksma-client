@@ -1,4 +1,6 @@
 import NavBar from "../navigation/NavBar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./css/Header.css";
 
 export default function Header() {
@@ -7,8 +9,24 @@ export default function Header() {
             <div className="header-bar-top"></div>
             <NavBar />
             <div className="contact-bar">
-                <p>Tel: 01296 392630</p>
-                <p>Email: info@zksma.co.uk</p>
+                <p>
+                    <FontAwesomeIcon 
+                    icon={faPhone} 
+                    size="lg" 
+                    style={{color: "#ffffff",}} /> : 
+                    <a className="contact-link" href={"tel:01296392630"}>
+                        01296 392630
+                    </a>
+                </p>
+                <p>
+                    <FontAwesomeIcon 
+                    icon={faEnvelope} 
+                    size="lg" 
+                    style={{color: "#ffffff",}} /> : 
+                    <a className="contact-link" href={"mailto: info@zksma.co.uk"}>
+                        info@zksma.co.uk
+                    </a>
+                </p>
             </div>
         </div>
     )

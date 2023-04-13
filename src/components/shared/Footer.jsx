@@ -1,7 +1,8 @@
 import { Card, CardGroup, Row, Col } from "react-bootstrap";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import footerLogo from "../../assets/footer-logo.png";
+import footerLogo from "../../assets/logos/footer-logo.png";
 import "./css/Footer.css";
 
 export default function Footer() {
@@ -9,7 +10,6 @@ export default function Footer() {
 
     <div className="footer">
         <div className="footer-bar-top"></div>
-        <Row className="footer-row">
             {/* <Col className="info">                
                 <p>ZKS Martial arts classes can be found in various locations and we welcome anyone that wishes to try us out! We have Martial arts classes in Aylesbury, Haddenham, Hemel Hempstead, Long Marston, Princes Risborough, Watford, Wendover, Weston Turville and Wingrave.</p>
             </Col>
@@ -18,16 +18,17 @@ export default function Footer() {
                 <Row className="brand-row">
                     <Card className="footer-card">
                         <Col className="address">
-                            <h3>Head Office</h3>
+                            <Card.Header className="card-header">Head Office</Card.Header>
                                 <p>40 Walton Place<br />
-                                    Weston Turville, Aylesbury<br />
+                                    Weston Turville<br /> Aylesbury<br />
                                     HP22 5RD 
                                 </p>
                         </Col>
                     </Card>
                     <Card className="footer-card">
-                        <Row className="social">
-                            <h3>Socialize</h3>                            
+                        <Card.Header className="card-header">Social</Card.Header>
+                        <div className="social">
+                                                   
                                 <Col className="social-icon-col">
                                     <a href="https://www.facebook.com/zksmartial.arts">
                                         <FontAwesomeIcon className="brand-icon" icon={faFacebook} style={{color: "#ffffff",}} />
@@ -43,7 +44,7 @@ export default function Footer() {
                                         <FontAwesomeIcon className="brand-icon" icon={faTwitter} style={{color: "#ffffff",}} />
                                     </a>
                                 </Col>                              
-                        </Row>
+                        </div>
                     </Card>
                     {/* <Card className="footer-card">
                         <Col className="contact">
@@ -54,9 +55,7 @@ export default function Footer() {
                     </Card> */}
                 </Row>       
             </CardGroup>
-        </Row>   
-            <hr />  
-            
+         
         <Row className="bottom-row">
             <Col className="footer-logo"> 
                 <img src={footerLogo} alt="footer zks logo" />
@@ -66,10 +65,25 @@ export default function Footer() {
             </Col>   
         </Row>   
         <div className="contact-bar">
-            <p>Tel: 01296 392630</p>
-            <p>Email: info@zksma.co.uk</p>
-        </div>  
-         
+            <p>
+                <FontAwesomeIcon 
+                icon={faPhone} 
+                size="lg" 
+                style={{color: "#ffffff",}} /> : 
+                <a className="contact-link" href={"tel:01296392630"}>
+                    01296 392630
+                </a>
+            </p>
+            <p>
+                <FontAwesomeIcon 
+                icon={faEnvelope} 
+                size="lg" 
+                style={{color: "#ffffff",}} /> : 
+                <a className="contact-link" href={"mailto: info@zksma.co.uk"}>
+                    info@zksma.co.uk
+                </a>
+            </p>
+        </div>
     </div>
     )
 }

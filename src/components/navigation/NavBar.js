@@ -1,6 +1,6 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import NavLogo from "../../assets/newlogo.png";
+import NavLogo from "../../assets/logos/newlogo.png";
 import "./NavBar.css";
 
 export default function NavBar() {
@@ -8,7 +8,7 @@ export default function NavBar() {
         <div id="top">
             
             <Navbar expand="lg" collapseOnSelect className="navbar">
-                <Container>  
+                <Container fluid>  
                 <Navbar.Brand>
                     <img src={NavLogo} className="nav-logo" alt=""></img>
                     {/* <span className="zks">ZKS</span>

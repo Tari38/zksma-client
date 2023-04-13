@@ -1,10 +1,7 @@
 import React from "react";
-import { Button, Card, CardGroup, Col, Row } from "react-bootstrap";
-// import LogoWithText from "../assets/ZKS Martial Arts.png";
-import ZKSLogo from "../assets/zks.jpg";
-import MAStyles from "../assets/silhouette-icons.png";
-import MA4Kids from "../assets/ma-for-kids.jpg";
-import MABenefits from "../assets/benefits.jpg";
+import { Button, Card, Col, Row } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import BucksVenuesModal from "../components/modals/Venue_Bucks";
 import HertsVenuesModal from "../components/modals/Venue_Herts";
 import "./pages.css";
@@ -12,6 +9,7 @@ import FreeTrialModal from "../components/modals/Free_Trial";
 import { LandingCarousel } from "../components";
 import ClassesKids from "../components/cards/Classes_Kids";
 import ClassesAdults from "../components/cards/Classes_Adults";
+import ContactForm from "../components/forms/Contact_Form";
 
 export default function Landing() {
     const [modalShowFreeTrial, setModalShowFreeTrial] = React.useState(false);
@@ -46,45 +44,33 @@ export default function Landing() {
                     <ClassesAdults />
                 </Row>
             </section>
-            <section>
-            <CardGroup className="landing-card-group">
-                <Col className="card-group-col">
-                    <Card id="about" className="landing-card"> 
-                    <Card.Img src={ZKSLogo} className="card-group-img"></Card.Img>                
-                        <Card.Header className="card-header">Who Are ZKS Martial Arts?</Card.Header>
-                            <Card.Body>
-                                We are an award winning martial arts group that specialise in children's martial arts.
-                            </Card.Body>                    
-                    </Card>
-                </Col>
-                <Col className="card-group-col">
-                    <Card id="groups" className="landing-card">   
-                    <Card.Img src={MA4Kids} className="card-group-img"></Card.Img>                     
-                        <Card.Header className="card-header">Who Do We Teach?</Card.Header>
-                            <Card.Body>
-                                Classes are available for children between 3 and 16 years of age.
-                            </Card.Body>                    
-                    </Card>
-                </Col>
-                <Col className="card-group-col">
-                    <Card id="classes" className="landing-card">  
-                    <Card.Img src={MAStyles} className="card-group-img"></Card.Img>                
-                        <Card.Header className="card-header">What Styles Do We Teach?</Card.Header>
-                            <Card.Body>
-                                We offer over 55 martial arts classes a week which include aspects of Karate, kick-boxing and Jiu-jitsu.
-                            </Card.Body>                        
-                    </Card>
-                </Col>
-                <Col className="card-group-col">
-                    <Card id="benefits" className="landing-card">     
-                    <Card.Img src={MABenefits} className="card-group-img"></Card.Img>               
-                        <Card.Header className="card-header">What Are The Benefits?</Card.Header>
-                            <Card.Body>
-                                People sign up to martial arts for different reasons: whether it's learning self-defence or just to get fit! Whatever your reason, we are open to all.
-                            </Card.Body>                        
-                    </Card>
-                </Col>
-            </CardGroup>
+            
+            <section id="contact">
+                <div className="contact-heading">
+                    <h1>Get in Contact</h1>
+                    <div className="contact-info">
+                        <p>
+                            <FontAwesomeIcon 
+                            icon={faPhone} 
+                            size="lg" 
+                            style={{color: "#ffffff",}} /><br  />   
+                            <a className="contact-link" href={"tel:01296392630"}>
+                                01296 392630
+                            </a>
+                        </p>
+                        <p>
+                            <FontAwesomeIcon 
+                            icon={faEnvelope} 
+                            size="lg" 
+                            style={{color: "#ffffff",}} /><br  />    
+                            <a className="contact-link" href={"mailto: info@zksma.co.uk"}>
+                                info@zksma.co.uk
+                            </a>
+                        </p>
+                    </div>  
+                    <br />
+                    <ContactForm />
+                </div>
             </section>
                 <div className="venue-heading">
                     <h1>Find Your Local Dojo</h1>
@@ -101,13 +87,13 @@ export default function Landing() {
                         </Card>
                     </Col>                
             </section>
-            <section id="questions">
+            {/* <section id="questions">
                 <h1>Got Questions?</h1>
                 <p>Try our FAQ's page! Our most common questions are answered there.</p>
 
                 <h2>Still got Questions?</h2>
                 <p>You can easily contact us via phone, email or filling out this quick form.</p>
-            </section>
+            </section> */}
         </main>
         <BucksVenuesModal
         show={modalShowBucks}
