@@ -24,20 +24,15 @@ export default function Landing() {
                         <Button className="free-trial-btn" onClick={() => setModalShowFreeTrial(true)}>Book a Free Trial</Button>
                     </Col>
                     <Col className="hero-col">
-                        <Button className="find-us-btn" href="#venues">Members Area</Button> 
+                        <Button className="find-us-btn" target="__blank" href="https://www.smallshout.co.uk/members/memberslogon.aspx?oid=1456145">Members Area</Button> 
                     </Col>
                 </Row>
             </section>
+
             <section id="hero">
-                <LandingCarousel />
-                    {/* <Col className="hero-col">
-                        <img className="logo-with-text" 
-                        src={ LogoWithText } 
-                        alt="main zks martial arts logo with text that reads 'for the whole family'">            
-                        </img>
-                    </Col> */}
-                
+                <LandingCarousel />                
             </section>
+            
             <section id="classes">
                 <Row className="classes-row">
                     <ClassesKids />                

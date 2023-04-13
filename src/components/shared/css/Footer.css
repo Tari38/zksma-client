@@ -69,15 +69,14 @@ a:hover {
 }
 
 .brand-icon {
-    height: 27px;
     width: auto;
-    margin: 5px;
+    margin: 10px;
+    transform: scale(2);
 }
 
 .brand-icon:hover {
     background-color: #ed1c24;
-    border-radius: 50%;
-    height: 27px;
+    border-radius: 50%;    
     width: auto;
 }
 
@@ -107,7 +106,7 @@ a:hover {
 }
 
 @media only screen and (max-width: 500px) {
-    .address, .contact, .brand-icon {
+    .address {
         width: 90%;
         display: flex;
         flex-direction: column;
@@ -132,6 +131,12 @@ a:hover {
     }
     .social {
         flex-direction: row;
+    }
+
+    .brand-icon {
+        transform: scale(2);
+        transition: all .5s ease;
+        margin: 20px;
     }
     
 }

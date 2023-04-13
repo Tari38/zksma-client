@@ -9,20 +9,20 @@ export default function Header() {
             <div className="header-bar-top"></div>
             <NavBar />
             <div className="contact-bar">
-                <p>
-                    <FontAwesomeIcon 
+                <FontAwesomeIcon 
                     icon={faPhone} 
                     size="lg" 
-                    style={{color: "#ffffff",}} /> : 
+                    style={{color: "#ffffff",}} />
+                <p> 
                     <a className="contact-link" href={"tel:01296392630"}>
                         01296 392630
                     </a>
                 </p>
-                <p>
-                    <FontAwesomeIcon 
+                <FontAwesomeIcon 
                     icon={faEnvelope} 
                     size="lg" 
-                    style={{color: "#ffffff",}} /> : 
+                    style={{color: "#ffffff",}} />
+                <p> 
                     <a className="contact-link" href={"mailto: info@zksma.co.uk"}>
                         info@zksma.co.uk
                     </a>

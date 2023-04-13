@@ -64,21 +64,22 @@ export default function Footer() {
                 <a title="SmallShout" href="http://www.smallshout.co.uk/"> SmallShout</a>
             </Col>   
         </Row>   
-        <div className="contact-bar">
-            <p>
-                <FontAwesomeIcon 
+        <div className="contact-bar">            
+            <FontAwesomeIcon 
                 icon={faPhone} 
                 size="lg" 
-                style={{color: "#ffffff",}} /> : 
+                style={{color: "#ffffff",}} />
+            <p> 
                 <a className="contact-link" href={"tel:01296392630"}>
                     01296 392630
                 </a>
             </p>
-            <p>
-                <FontAwesomeIcon 
+            
+            <FontAwesomeIcon 
                 icon={faEnvelope} 
                 size="lg" 
-                style={{color: "#ffffff",}} /> : 
+                style={{color: "#ffffff",}} />
+            <p> 
                 <a className="contact-link" href={"mailto: info@zksma.co.uk"}>
                     info@zksma.co.uk
                 </a>
