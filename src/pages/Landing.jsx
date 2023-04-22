@@ -2,8 +2,6 @@ import React from "react";
 import { Button, Card, Col, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import BucksVenuesModal from "../components/modals/Venue_Bucks";
-import HertsVenuesModal from "../components/modals/Venue_Herts";
 import "./pages.css";
 import FreeTrialModal from "../components/modals/Free_Trial";
 import { LandingCarousel } from "../components";
@@ -13,8 +11,6 @@ import ContactForm from "../components/forms/Contact_Form";
 
 export default function Landing() {
     const [modalShowFreeTrial, setModalShowFreeTrial] = React.useState(false);
-    const [modalShowBucks, setModalShowBucks] = React.useState(false);
-    const [modalShowHerts, setModalShowHerts] = React.useState(false);
     return (
         <>
         <main>
@@ -73,12 +69,12 @@ export default function Landing() {
             <section id="venues">                
                     <Col className="venue-col">
                         <Card id="bucks">
-                            <button className="bucks-btn"  onClick={() => setModalShowBucks(true)}>Buckinghamshire</button>
+                            <button className="bucks-btn"  >Buckinghamshire</button>
                         </Card>
                     </Col>
                     <Col className="venue-col">
                         <Card id="herts">
-                            <button className="herts-btn" onClick={() => setModalShowHerts(true)}>Hertfordshire</button>
+                            <button className="herts-btn" >Hertfordshire</button>
                         </Card>
                     </Col>                
             </section>
@@ -90,14 +86,7 @@ export default function Landing() {
                 <p>You can easily contact us via phone, email or filling out this quick form.</p>
             </section> */}
         </main>
-        <BucksVenuesModal
-        show={modalShowBucks}
-        onHide={() => setModalShowBucks(false)}
-        />
-        <HertsVenuesModal
-            show={modalShowHerts}
-            onHide={() => setModalShowHerts(false)}
-        />
+        
         <FreeTrialModal
             show={modalShowFreeTrial}
             onHide={() => setModalShowFreeTrial(false)}

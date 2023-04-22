@@ -4,6 +4,7 @@ import ZKSLogo from "../assets/logos/zks.jpg";
 import MAStyles from "../assets/backgrounds/silhouette-icons.png";
 import MA4Kids from "../assets/logos/ma-for-kids.jpg";
 import MABenefits from "../assets/backgrounds/benefits.jpg";
+import MABucksVenues from "../components/cards/MA_Bucks";
 
 export default function About() {
     return (
@@ -28,7 +29,7 @@ export default function About() {
                     </Card>
                 </Col>
                 <Col className="card-group-col">
-                    <Card id="classes" className="landing-card">  
+                    <Card id="kids-classes" className="landing-card">  
                     <Card.Img src={MAStyles} className="card-group-img"></Card.Img>                
                         <Card.Header className="card-header">What Styles Do We Teach?</Card.Header>
                             <Card.Body>
@@ -46,6 +47,8 @@ export default function About() {
                     </Card>
                 </Col>
             </CardGroup>
+            <h2>Buckinghamshire Venues</h2>
+            <MABucksVenues />
         </section>
     )
 }

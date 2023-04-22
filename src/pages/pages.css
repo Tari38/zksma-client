@@ -33,7 +33,7 @@ main {
     flex-direction: row;
 }
 
-#about {
+#about, #benefits {
     background-image: linear-gradient(to top, #6b1316, #781418, #86161a, #93171b, #a1181d, #ac191e, #b6191f, #c11a20, #cc1b21, #d71b22, #e21c23, #ed1c24);
     color: #fff;
     border-color: #fff;

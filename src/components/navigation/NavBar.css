@@ -3,12 +3,15 @@
     position: sticky;
     top: 0;
     transition: all 1s ease-in-out;
+    min-width: 285px;
+    
 }
 
 .nav-logo {
     max-height: 150px;
     width: auto;
     padding: 10px;
+    transition: 1s ease; 
 }
 
 .zks {
@@ -37,4 +40,16 @@
     color: #fff;
     font-size: 24px;
     margin: 20px;
+}
+
+@media only screen and (max-width: 450px) {
+    .nav-logo {
+        transform: scale(0.8);
+        transition: 1s ease; 
+        margin-left: -40px;
+    }
+    .navbar {
+        justify-content: space-between;
+
+    }
 }

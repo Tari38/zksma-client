@@ -18,7 +18,7 @@
     height: 30px;
     width: 100%;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 .contact-bar > p {
@@ -27,4 +27,15 @@
 
 .contact-link:hover {
     color:#000;
+}
+
+@media only screen and (max-width: 450px) {
+    .contact-link {
+        font-size: 10px;
+    }
+    .contact-bar {
+        margin: 5px auto;
+        justify-content: center;
+        align-items: center;
+    }
 }

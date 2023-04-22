@@ -1,7 +1,5 @@
 export { default as Landing } from "./Landing";
 export { default as About } from "./About";
-export { default as MABucks } from "./MA_Bucks";
-export { default as MAHerts } from "./MA_Herts";
 export { default as FAQ } from "./FAQ";
 export { default as Fees } from "./Fees";
 export { default as KidsClasses } from "./Classes_Kids";
