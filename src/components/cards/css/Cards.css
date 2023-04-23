@@ -2,9 +2,9 @@
 
 .kids-classes-card, .adults-classes-card {
     background-color: #000000b6;
-    border-radius: 20px;
-    border: #ed1c24 solid 4px;
-    box-shadow: #530808 2px 2px 4px;
+    /* border-radius: 20px; */
+    /* border: #ed1c24 solid 4px; */
+    /* box-shadow: #530808 2px 2px 4px; */
     max-height: 300px;
     width: 300px;
     margin: auto;

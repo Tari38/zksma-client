@@ -13,7 +13,7 @@ export default function Landing() {
     const [modalShowFreeTrial, setModalShowFreeTrial] = React.useState(false);
     return (
         <>
-        <main>
+        {/* <main> */}
             <section id="cta">
                 <Row>
                     <Col className="hero-col">
@@ -25,8 +25,9 @@ export default function Landing() {
                 </Row>
             </section>
 
-            <section id="hero">
-                <LandingCarousel />                
+            <section id="hero" className="parallax">
+                {/* <LandingCarousel />                 */}
+                {/* get image from CMS */}
             </section>
             
             <section id="classes">
@@ -85,7 +86,7 @@ export default function Landing() {
                 <h2>Still got Questions?</h2>
                 <p>You can easily contact us via phone, email or filling out this quick form.</p>
             </section> */}
-        </main>
+        {/* </main> */}
         
         <FreeTrialModal
             show={modalShowFreeTrial}

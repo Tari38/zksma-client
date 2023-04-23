@@ -1,9 +1,9 @@
 
 
 #hero {
-    border: #000 5px solid;
-    background-image: linear-gradient(to bottom, #6b1316, #781418, #86161a, #93171b, #a1181d, #ac191e, #b6191f, #c11a20, #cc1b21, #d71b22, #e21c23, #ed1c24); 
-    box-shadow: #530808 2px 2px 4px;  
+    /* border: #000 5px solid; */
+    /* background-image: linear-gradient(to bottom, #6b1316, #781418, #86161a, #93171b, #a1181d, #ac191e, #b6191f, #c11a20, #cc1b21, #d71b22, #e21c23, #ed1c24);  */
+    /* box-shadow: #530808 2px 2px 4px;   */
 }
 .landing-carousel {
     width: 100%;
