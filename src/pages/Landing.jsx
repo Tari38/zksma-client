@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./pages.css";
 import FreeTrialModal from "../components/modals/Free_Trial";
-import { LandingCarousel } from "../components";
+// import { LandingCarousel } from "../components";
 import ClassesKids from "../components/cards/Classes_Kids";
 import ClassesAdults from "../components/cards/Classes_Adults";
 import ContactForm from "../components/forms/Contact_Form";
