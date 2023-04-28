@@ -14,7 +14,7 @@ export default function Header() {
                     size="lg" 
                     style={{color: "#ffffff",}} />
                 <p> 
-                    <a className="contact-link" href={"tel:01296392630"}>
+                    <a className="header-contact-link" href={"tel:01296392630"}>
                         01296 392630
                     </a>
                 </p>
@@ -23,7 +23,7 @@ export default function Header() {
                     size="lg" 
                     style={{color: "#ffffff",}} />
                 <p> 
-                    <a className="contact-link" href={"mailto: info@zksma.co.uk"}>
+                    <a className="header-contact-link" href={"mailto: info@zksma.co.uk"}>
                         info@zksma.co.uk
                     </a>
                 </p>

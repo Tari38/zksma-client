@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Layout } from './components';
-import { About, AdultClasses, Contact, FAQ, Fees, Groups, KidsClasses, Landing, NotFound } from './pages';
+import { About, AdultsClasses, Contact, FAQ, Fees, Groups, KidsClasses, Home, NotFound } from './pages';
 import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronUp } from '@fortawesome/free-solid-svg-icons';
@@ -11,11 +11,11 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Landing />} />
+          <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="faq" element={<FAQ />} />
           <Route path="fees" element={<Fees />} />
-          <Route path="adultclasses" element={<AdultClasses />} />
+          <Route path="adultsclasses" element={<AdultsClasses />} />
           <Route path="kidsclasses" element={<KidsClasses />} />
           <Route path="groups" element={<Groups />} />
           <Route path="contact" element={<Contact />} />

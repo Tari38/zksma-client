@@ -56,30 +56,20 @@ export default function FreeTrialForm() {
                         <option>Select Gender</option>
                         <option value="female">Female</option>
                         <option value="male">Male</option>
-                        <option value="other">Other (please specify)</option>
                     </Form.Select>
                     <Form.Control className="form-input" type="date" placeholder="Date of Birth" required></Form.Control>
                     <Form.Control className="form-input" as="textarea" placeholder="Any medical or special educational needs?"></Form.Control>
-                </Form.Group>
-
-                
+                </Form.Group>                
 
                 <Form.Group className="form-group" controlId="formBasicEmail">
                     <Form.Label className="form-label">Email address</Form.Label>
                     <Form.Control className="form-input" type="email" placeholder="Enter email" />
-                    <Form.Text className="text-muted">
-                    We'll never share your email with anyone else.
-                    </Form.Text>
+                    <small>
+                        We'll never share your email with anyone else.
+                    </small>
                 </Form.Group>
-
-                <Form.Group className="form-group" controlId="formBasicPassword">
-                    <Form.Label className="form-label">Password</Form.Label>
-                    <Form.Control className="form-input" type="password" placeholder="Password" />
-                </Form.Group>
-                <Form.Group className="form-group" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
-                <Button variant="primary" type="submit">
+                               
+                <Button type="submit">
                     Submit
                 </Button>
             </Form>
