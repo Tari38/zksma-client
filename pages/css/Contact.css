@@ -1,0 +1,21 @@
+/* CONTACT */
+
+#contact {
+    background: var(--dark-aluminium);
+    color: #fff;
+    text-shadow: #000 1px 1px;
+    padding-top: 20px;
+}
+
+.contact-info {
+    display: flex;
+    height: 30px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.contact-link:hover {
+    color:red;
+    text-shadow: none;
+}

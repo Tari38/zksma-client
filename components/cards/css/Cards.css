@@ -1,0 +1,63 @@
+/* classes */
+
+.kids-classes-card, .adults-classes-card {
+    background-color: #000000b6;
+    max-height: 300px;
+    width: 300px;
+    margin: auto;
+    padding: 30px;
+    justify-content: center;
+    align-content: center;    
+}
+
+.kids-classes-card:hover, .adults-classes-card:hover {
+    background-color: #ed1c24;
+}
+
+
+
+/* venues */
+
+.venue-card-group {
+    background-color: #530808;
+    border: 5px #ed1c24 solid;
+    border-radius: 10px;
+    margin: 10px auto;
+    box-shadow: #530808 4px 2px 4px;    
+}
+
+.venue-card {
+    border: #530808 2px solid;
+    border-radius: 10px;
+}
+
+.venue-card-header {
+    background-color: #530808;
+    height: 50px;
+    font-size: 16px;
+    /* position: sticky;
+    top: 0; */
+}
+
+.venue-card-img {
+    height: 10px;
+    transition: 0.5s ease;
+}
+.venue-card-img:hover {
+    transition: 0.5s ease;
+    height: 200px;
+    width: auto;
+}
+
+.venue-card-body {
+    background-image: linear-gradient(to top, #6b1316, #781418, #86161a, #93171b, #a1181d, #ac191e, #b6191f, #c11a20, #cc1b21, #d71b22, #e21c23, #ed1c24);
+    color: #fff;
+    border-color: #fff;
+    height: auto;
+}
+
+@media only screen and (max-width: 955px) {
+    .venue-card-header {
+        font-size: 14px;
+    }
+}

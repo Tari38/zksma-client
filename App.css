@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+  transition: all .5s ease;
+}
+
+.card-header {
+  background-color: #282c34;
+  text-align: center;
+  color: #fff;
+}
+
+.to-top-btn {
+  visibility: hidden;
+  margin: 20px auto;
+}
+
+.to-top-btn-icon {
+  visibility: visible;
+  color: #ed1c24;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  width: 50px;
+}
+
+#dragons {
+  background: var(--dragons);
+  padding: 5px;
+}
+
+#ninjas {
+  background: var(--mini-ninjas);
+  padding: 5px;
+}
+
+#juniors {
+  background: var(--juniors);
+  padding: 5px;
+}
+
+#teen {
+  background: var(--teens);
+  padding: 5px;
+}
