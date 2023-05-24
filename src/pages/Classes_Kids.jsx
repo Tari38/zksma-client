@@ -73,7 +73,7 @@ export default function KidsClasses() {
         
         <br />
 
-        <section id="location-maps">
+        <section id="venues">
             <h1>Class Locations</h1>
                 <LocationMaps />  
         </section>   

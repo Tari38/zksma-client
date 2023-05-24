@@ -8,7 +8,7 @@ export default function Fees() {
             <h1>ZKS Martial Arts Fees</h1>
             <p>ZKS Martial Arts offer great value for money on all our membership tariffs!</p>
                 
-            <p>We always offer a <span><a href="../">FREE Trial</a></span> to those interested in our classes and we don't take any payments up front.</p>
+            <p>We always offer a <span className="span-link"><a href="../">FREE Trial</a></span> to those interested in our classes and we don't take any payments up front.</p>
                 
             <p>If you decide that you like our classes then the next step is to send back the Direct Debit form , which is a simple and easy way to pay.</p> 
                 

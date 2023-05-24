@@ -1,4 +1,58 @@
+@import url("../../styles/theme.css");
+
+
+/* HOME */
+
 .home-contact-link:hover {
     color: #000;
     text-shadow: none;
+}
+
+main {
+    background-image: url("../../assets/photos/IMG_0614-2880w.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+#cta {
+    display: flex;
+    flex-direction: row;
+    min-height: 400px;   
+    max-height: 400px; 
+    background-color: #0000001c;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.hero-col {
+    justify-content: center;
+    align-items: center;
+    margin: auto; 
+    width: auto;   
+    background-color: none;
+}
+
+
+/* CLASSES */
+
+.classes-heading-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
+    width: 99%;
+}
+.classes-heading {
+    color: #fff;
+}
+#classes {
+    justify-content: center;
+    align-items: center;    
+    height: auto;   
+}
+.classes-row {
+    display: flex;
+    flex-direction: row;
 }

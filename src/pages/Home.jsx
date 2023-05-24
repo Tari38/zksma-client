@@ -1,9 +1,11 @@
 import React from "react";
-import { Button, Card, Col, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import "./pages.css";
 import "./css/Home.css";
 import FreeTrialModal from "../components/modals/Free_Trial";
 import Contact from "./Contact";
+import { FreeTrialButton, MemberAreaButton, KidsClassesButton, AdultsClassesButton } from "../components/buttons/Button";
+import { BucksCard, HertsCard } from "../components/cards/Card";
 
 
 export default function Home() {
@@ -12,13 +14,12 @@ export default function Home() {
         <>
         <main>
             <section id="cta">
-                <Row id="hero">
+                <Row id="home-hero">
                     <Col className="hero-col">
-                        <Button className="free-trial-btn" href="https://www.smallshout.co.uk/members/register/new_registration.aspx?oid=1456145&I=0">Book a Free Trial</Button>
-                        {/* <Button className="free-trial-btn" onClick={() => setModalShowFreeTrial(true)}>Book a Free Trial</Button> */}
+                        <FreeTrialButton />
                     </Col>
                     <Col className="hero-col">
-                        <Button className="members-btn" target="__blank" href="https://www.smallshout.co.uk/members/memberslogon.aspx?oid=1456145">Go To Member Area</Button> 
+                        <MemberAreaButton /> 
                     </Col>
                 </Row>
             </section>
@@ -29,31 +30,24 @@ export default function Home() {
                         <h1 className="classes-heading">Class Timetables</h1>
                     </div>
                     <br />
-                    <Button className="classes-btn" href="/kidsclasses">
-                        Childrens' Classes
-                    </Button>
-                    <Button className="classes-btn" href="/adultsclasses">
-                        Adults' Classes
-                    </Button>
+                    <KidsClassesButton />
+                    <AdultsClassesButton />
                 </Row>              
             </section>
             
             <section id="contact">
                 <Contact />
             </section>
+
                 <div className="venue-heading">
                     <h1>Find Your Local Dojo</h1>
                 </div>
             <section id="venues">                
                     <Col className="venue-col">
-                        <Card id="bucks">
-                            <button className="bucks-btn" href="#venues" >Buckinghamshire</button>
-                        </Card>
+                        <BucksCard />
                     </Col>
                     <Col className="venue-col">
-                        <Card id="herts">
-                            <button className="herts-btn" >Hertfordshire</button>
-                        </Card>
+                        <HertsCard />
                     </Col>                
             </section>
         </main>

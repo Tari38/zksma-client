@@ -1,105 +1,6 @@
 @import url("../styles/theme.css");
 
-main {
-    background-image: url("../assets/photos/IMG_0614-2880w.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-}
-
-#cta {
-    display: flex;
-    flex-direction: row;
-    min-height: 400px;   
-    max-height: 400px; 
-    background-color: #0000001c;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-
-.hero-col {
-    justify-content: center;
-    align-items: center;
-    margin: auto; 
-    width: auto;   
-}
-
-.free-trial-btn, .members-btn {
-    display: flex;
-    flex-direction: column;
-    background: var(--dark-red);
-    border: none;
-    width: 250px;
-    min-height: 50px;
-    margin: auto;
-    text-transform: uppercase;
-    text-shadow: #000 2px 2px;
-    letter-spacing: 1px;
-    font-weight: 700;
-    font-size: 1.2rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.free-trial-btn:hover, .members-btn:hover {
-    background-image: none;
-    background-color: #000;
-    border: none;
-}
-
-/* CLASSES */
-
-.classes-heading-container {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px 0;
-    width: 99%;
-}
-.classes-heading {
-    color: #fff;
-}
-#classes {
-    justify-content: center;
-    align-items: center;    
-    height: auto;   
-}
-.classes-row {
-    display: flex;
-    flex-direction: row;
-}
-.classes-btn {
-    background: var(--dark-red);
-    border: none;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
-    font-size: 20px;
-    padding: 20px 0;
-}
-.classes-btn:hover {
-    background-image: none;
-    background-color: #000;
-    border: none;
-}
-
 /* ABOUT */
-
-#about, #benefits {
-    background-image: linear-gradient(to top, #6b1316, #781418, #86161a, #93171b, #a1181d, #ac191e, #b6191f, #c11a20, #cc1b21, #d71b22, #e21c23, #ed1c24);
-    color: #fff;
-    border-color: #fff;
-}
-
-
-
-.landing-card-group {
-    border-radius: 10px;
-    box-shadow: #530808 2px 2px 4px;
-    background-color: #000;
-    padding: 5px 5px 15px 5px;
-}
 
 .card-group-col {
     height: 360px;
@@ -157,7 +58,7 @@ main {
     display: flex;
     flex-direction: row;
     margin: auto;
-    background-image: url("../assets/backgrounds/dojo-vector-illustration.webp");  
+    background-image: url("../assets/backgrounds/dojo-bg.webp");  
     justify-content: center;  
     align-items: center;
 }
