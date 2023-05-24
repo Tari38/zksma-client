@@ -1,15 +1,14 @@
 import "./schedule.css";
 import "../css/schedule_base.css";
-import { useState, useMemo } from "react";
+import { useMemo } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 
 import SelectedVenue from "./SelectedVenue";
-import { columnData, groupData, rowData, venueData, zksmahqData, bpccData, flcData, lmsData, smshData, prpsData, wccData } from "../data-source";
+import { columnData, groupData, rowData, zksmahqData, bpccData, flcData, lmsData, smshData, prpsData, wccData } from "../data-source";
 
 
 export default function ScheduleBase() {
-        const [selectedVenue, setSelectedVenue] = useState([]);
         
         const groupEventsData = useMemo(() => [zksmahqData, bpccData, flcData, lmsData, smshData, prpsData, wccData], []);
         
