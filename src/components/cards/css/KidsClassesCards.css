@@ -1,0 +1,25 @@
+#card-dragon, #card-mini, #card-junior, #card-teen, #card-sen, #card-homeed, #card-schools {
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+#card-dragon:hover, #card-mini:hover, #card-junior:hover, #card-teen:hover, #card-sen:hover, #card-homeed:hover, #card-schools:hover {
+    transform: none;
+    /* box-shadow: none; */
+}
+
+.class-card-header {
+    color: #fff;
+    width: 100%;
+}
+
+.class-card-logo {
+    max-width: 200px;
+    max-height: 100px;
+    padding: 10px;
+}
+
+.class-card-text {
+
+}

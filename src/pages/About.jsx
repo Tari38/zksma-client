@@ -1,5 +1,6 @@
 import { Col, Row } from "react-bootstrap";
-import { AboutCard1, AboutCard2, AboutCard3, AboutCard4 } from "../components/cards/Card";
+import { AboutCard1, AboutCard2, AboutCard3, AboutCard4 } from "../components/cards/AboutCards";
+import "./css/About.css";
 
 export default function About() {
     return (
@@ -7,7 +8,7 @@ export default function About() {
         <div id="about-hero">
             <h1>About ZKS Martial Arts</h1>
         </div>
-            <Row>
+            <Row class="about-row">
                 <Col className="card-group-col">
                     <AboutCard1 />
                 </Col>
@@ -15,7 +16,7 @@ export default function About() {
                     <AboutCard2 />
                 </Col>
             </Row>
-            <Row>
+            <Row class="about-row">
                 <Col className="card-group-col">
                     <AboutCard3 />
                 </Col>

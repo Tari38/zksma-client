@@ -14,11 +14,11 @@ export default function Home() {
         <>
         <main>
             <section id="cta">
-                <Row id="home-hero">
-                    <Col className="hero-col">
+                <Row className="home-hero">
+                    <Col id="home-hero-col">
                         <FreeTrialButton />
                     </Col>
-                    <Col className="hero-col">
+                    <Col id="home-hero-col">
                         <MemberAreaButton /> 
                     </Col>
                 </Row>

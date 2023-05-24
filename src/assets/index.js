@@ -22,7 +22,7 @@ export { default as HertsBadgeLogo } from "./logos/Hertfordshire_Badge.png";
 export { default as DragonLogo } from "./logos/dragonlogo.png";
 export { default as FooterLogo } from "./logos/footer-logo.png";
 export { default as KidLogo } from "./logos/kidlogo.png";
-export { default as MiniNinjaLogo } from "./logos/mininjalogo.png";
+export { default as MiniNinjaLogo } from "./logos/minininjalogo.png";
 export { default as MAforAllLogo } from "./logos/ma-for-all.jpg";
 export { default as MAforKidsLogo } from "./logos/ma-for-kids.jpg";
 export { default as ZKSNewLogo } from "./logos/newlogo.png";

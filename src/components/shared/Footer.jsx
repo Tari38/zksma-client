@@ -2,27 +2,28 @@ import { Card, CardGroup, Row, Col } from "react-bootstrap";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { ToTopButton } from "../buttons/Button";
 import footerLogo from "../../assets/logos/footer-logo.png";
 import "./css/Footer.css";
 
 export default function Footer() {
     return (
-
+    <>
     <div className="footer">
         <div className="footer-bar-top"></div>
             
             <Row className="brand-row">
                 <CardGroup className="footer-card-group">
-                    <Card className="footer-card">
+                    <Card id="footer-card">
                         <Col className="address">
-                            <Card.Header className="card-header">Head Office</Card.Header>
+                            <Card.Header className="footer-card-header">Head Office</Card.Header>
                                 <p>40 Walton Place<br />
                                     Weston Turville<br /> Aylesbury<br />
                                     HP22 5RD 
                                 </p>
                         </Col>
                     </Card>
-                    <Card className="footer-card">
+                    <Card id="footer-card">
                         <Card.Header className="card-header">Social</Card.Header>
                         <div className="social">
                             <Row>                      
@@ -46,15 +47,6 @@ export default function Footer() {
                     </Card>
             </CardGroup>
         </Row>       
-         
-        <Row className="bottom-row">
-            <Col className="footer-logo"> 
-                <img src={footerLogo} alt="footer zks logo" />
-            </Col>
-            <Col className="copyright">&copy; 2023 ZKS MA | Built by <a href="https://www.sdwebdevelopment.co.uk/" target="__blank">SDWebDevelopment</a> | Powered by  
-                <a title="SmallShout" href="http://www.smallshout.co.uk/"> SmallShout</a>
-            </Col>   
-        </Row>   
         <div className="contact-bar">            
             <FontAwesomeIcon 
                 icon={faPhone} 
@@ -77,5 +69,19 @@ export default function Footer() {
             </p>
         </div>
     </div>
+    <div className="footer-copyright-wrapper">     
+        <Row className="bottom-row">
+            <Col className="footer-logo-col"> 
+                <img src={footerLogo} alt="footer zks logo" />
+            </Col>
+            <Col>
+                <ToTopButton />     
+            </Col>
+            <Col className="footer-copyright-col">&copy; 2023 ZKS MA | Built by <a href="https://www.sdwebdevelopment.co.uk/" target="__blank">SDWebDevelopment</a> | Powered by  
+                <a title="SmallShout" href="http://www.smallshout.co.uk/"> SmallShout</a>
+            </Col>   
+        </Row>   
+    </div>
+    </>
     )
 }

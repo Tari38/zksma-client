@@ -47,24 +47,7 @@
     background-image: url("../assets/logos/Hertfordshire_Badge.png");
 }
 
-.venue-heading {
-    background-color: #000;
-    color: #fff;
-    padding: 10px 0;
-    width: 100%;
-}
 
-#venues {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    background-image: url("../assets/backgrounds/dojo-bg.webp");  
-    justify-content: center;  
-    align-items: center;
-}
-.venue-col {
-    margin: auto;
-}
 
 
 .bucks-btn, .herts-btn {

@@ -1,0 +1,32 @@
+#about-hero {
+    background-image: url("../../assets/logos/zks-logowithtext.png");
+    background-size: contain;
+    background-repeat: round;
+    min-height: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#about-hero h1 {
+    background-color: #0000008a;
+    min-height: 300px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+}
+
+.about-row {
+    display: flex;
+    width: 100%;    
+    background-color: beige;
+}
+
+.card-group-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+}

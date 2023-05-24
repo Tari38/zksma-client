@@ -1,6 +1,15 @@
 import { Button } from "react-bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleChevronUp } from '@fortawesome/free-solid-svg-icons';
 import "./Buttons.css";
 
+export const ToTopButton = () => {
+    return (        
+        <Button className="to-top-btn" href="#top">
+            <FontAwesomeIcon className='to-top-btn-icon' icon={faCircleChevronUp} size="xs" style={{color: "#e61924",}} />            
+        </Button>
+    )
+}
 
 export const FreeTrialButton = () => {
     return (
