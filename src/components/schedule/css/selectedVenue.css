@@ -1,0 +1,21 @@
+.selector-wrapper {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: red;
+}
+
+.selector {
+    height: 2rem;    
+    border: 2px solid red;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #fff;
+    font-weight: 700;
+}
+
+.timetable-h1 {
+    color: #fff;
+    text-shadow: 1px 1px #000;
+}
+
+/* @keyframes // fade in header */

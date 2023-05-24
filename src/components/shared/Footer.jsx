@@ -1,7 +1,7 @@
 import { Card, CardGroup, Row, Col } from "react-bootstrap";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
+// import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import footerLogo from "../../assets/logos/footer-logo.png";
 import "./css/Footer.css";
 
@@ -10,12 +10,9 @@ export default function Footer() {
 
     <div className="footer">
         <div className="footer-bar-top"></div>
-            {/* <Col className="info">                
-                <p>ZKS Martial arts classes can be found in various locations and we welcome anyone that wishes to try us out! We have Martial arts classes in Aylesbury, Haddenham, Hemel Hempstead, Long Marston, Princes Risborough, Watford, Wendover, Weston Turville and Wingrave.</p>
-            </Col>
-            <hr /> */}
-            <CardGroup className="footer-card-group">
-                <Row className="brand-row">
+            
+            <Row className="brand-row">
+                <CardGroup className="footer-card-group">
                     <Card className="footer-card">
                         <Col className="address">
                             <Card.Header className="card-header">Head Office</Card.Header>
@@ -28,33 +25,27 @@ export default function Footer() {
                     <Card className="footer-card">
                         <Card.Header className="card-header">Social</Card.Header>
                         <div className="social">
-                                                   
+                            <Row>                      
                                 <Col className="social-icon-col">
-                                    <a href="https://www.facebook.com/zksmartial.arts">
-                                        <FontAwesomeIcon className="brand-icon" icon={faFacebook} style={{color: "#ffffff",}} />
+                                    <a href="https://www.facebook.com/zksmartial.arts" aria-label="facebook link">
+                                        <i className="fa-brands fa-facebook" style={{"color": "#1077F0"}}></i>
                                     </a>
                                 </Col>
                                 <Col className="social-icon-col">
-                                    <a href="https://www.instagram.com/zks_m_a/">
-                                        <FontAwesomeIcon className="brand-icon" icon={faInstagram} style={{color: "#ffffff",}} />
+                                    <a href="https://www.instagram.com/zks_m_a/" aria-label="instagram link">
+                                        <i className="fa-brands fa-instagram" style={{"color": "#FDD568"}}></i>
                                     </a>
                                 </Col>
                                 <Col className="social-icon-col"> 
-                                    <a href="https://twitter.com/zksma">
-                                        <FontAwesomeIcon className="brand-icon" icon={faTwitter} style={{color: "#ffffff",}} />
+                                    <a href="https://twitter.com/zksma" aria-label="twitter link">
+                                        <i className="fa-brands fa-twitter" style={{"color": "#229AF0"}}></i>
                                     </a>
-                                </Col>                              
+                                </Col> 
+                            </Row>                              
                         </div>
                     </Card>
-                    {/* <Card className="footer-card">
-                        <Col className="contact">
-                            <h3>Contact Us</h3>
-                            <a href="tel:01296 392630">01296 392630</a><br />
-                            <a href="mailto:info@zksma.co.uk">info@zksma.co.uk</a>                                
-                        </Col>
-                    </Card> */}
-                </Row>       
             </CardGroup>
+        </Row>       
          
         <Row className="bottom-row">
             <Col className="footer-logo"> 

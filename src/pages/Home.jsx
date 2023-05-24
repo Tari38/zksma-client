@@ -14,7 +14,8 @@ export default function Home() {
             <section id="cta">
                 <Row id="hero">
                     <Col className="hero-col">
-                        <Button className="free-trial-btn" onClick={() => setModalShowFreeTrial(true)}>Book a Free Trial</Button>
+                        <Button className="free-trial-btn" href="https://www.smallshout.co.uk/members/register/new_registration.aspx?oid=1456145&I=0">Book a Free Trial</Button>
+                        {/* <Button className="free-trial-btn" onClick={() => setModalShowFreeTrial(true)}>Book a Free Trial</Button> */}
                     </Col>
                     <Col className="hero-col">
                         <Button className="members-btn" target="__blank" href="https://www.smallshout.co.uk/members/memberslogon.aspx?oid=1456145">Go To Member Area</Button> 
@@ -55,13 +56,6 @@ export default function Home() {
                         </Card>
                     </Col>                
             </section>
-            {/* <section id="questions">
-                <h1>Got Questions?</h1>
-                <p>Try our FAQ's page! Our most common questions are answered there.</p>
-
-                <h2>Still got Questions?</h2>
-                <p>You can easily contact us via phone, email or filling out this quick form.</p>
-            </section> */}
         </main>
         
         <FreeTrialModal

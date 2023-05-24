@@ -1,0 +1,14 @@
+.card {
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border: 1px solid #000;
+    transition: .5s ease;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    transition: .5s ease;
+    box-shadow: 4px 4px 6px rgb(71, 59, 59);
+}

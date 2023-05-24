@@ -1,7 +1,7 @@
 import { Card, CardGroup } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDragon, faStar, faTrophy, faUserNinja } from "@fortawesome/free-solid-svg-icons";
-import "./css/Cards.css";
+import "./Fees.css";
 
 export default function FeesCards() {
     return (

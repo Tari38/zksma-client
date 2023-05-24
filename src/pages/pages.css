@@ -278,99 +278,32 @@ main {
 }
 
 #card-dragon {
-    background-color: #98FB98;
+    background: var(--dragons);
 }
 #card-mini {
-    background-color: #CC5757;
+    background: var(--ninjas);
 }
 #card-junior {
-    background-color: #A33030;
+    background: var(--juniors);
 }
 #card-teen {
-    background-color: #A35E30;
+    background: var(--teens);
+}
+#card-sen {
+    background: var(--sen);
+}
+#card-homeed {
+    background: var(--homeed);
+}
+#card-schools {
+    background: var(--schools);
 }
 
-/* time table */
-
-.timetable {
-    background-color: #f0f0f0;
-    color: #222;
+#location-maps {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-    border: #fff 1px solid;
-}
-
-table {
-    border-collapse: separate;
-    border-spacing: 0;
-}
-
-tr {
-    display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
-}
-
-th {
-    height: 85px;
-    width: auto;
-    padding: 4px 16px;
-    background-color: #f30707d0; 
-    color: #fff;
-}
-
-.zks-shortcode-table thead tr.zks-shortcode-row th:first-child::before, .xs-dark-time-table .zks-shortcode-table thead tr.zks-shortcode-row th:first-child::before {
-    font-size: 30px;
-    font-weight: 100;
-}
-
-.zks-shortcode-table thead tr.zks-shortcode-row th:first-child {
-    background: #000;
-    color: #fff;
-}
-
-.zks-shortcode-wrapper .zks-shortcode-table tr.zks-shortcode-row th {
-    background-color: #f0f0f0;
-    border: 1px solid #fff;
-    text-align: center;
-    color: #404040;
-    padding: 0.25rem 1rem;
-    overflow-wrap: normal;
-    -webkit-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
-    
-}
-
-.zks-shortcode-table thead tr.zks-shortcode-row th {
-    text-transform: uppercase;
-}
-
-.zks-shortcode-table tbody tr .zks-shortcode-event {
-    border: 0;
-    border-width: 0 1px 1px 0;
-    border-style: solid;
-    background: 0 0;
-    border-color: #d8d8d8;
-}
-
-.zks-shortcode-table tbody tr .zks-shortcode-event>div[data-type=event] {
-    outline: 0;
-    transition: all .4s ease;
-}
-
-.zks-shortcode-wrapper .zks-shortcode-table tbody .zks-event-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 3;
-    overflow: hidden;
-}
-
-.zks-shortcode-table tbody tr .zks-shortcode-event>div[data-type=event] .zks-inner-event-content .event-title {
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 12px !important;
-    line-height: 1;
-    color:rgba(237, 28, 35, 0.76)
 }

@@ -1,10 +1,9 @@
-/* classes */
+@import url("../../../styles/theme.css");
+
+/* CLASSES */
 
 .kids-classes-card, .adults-classes-card {
     background-color: #000000b6;
-    /* border-radius: 20px; */
-    /* border: #ed1c24 solid 4px; */
-    /* box-shadow: #530808 2px 2px 4px; */
     max-height: 300px;
     width: 300px;
     margin: auto;
@@ -17,59 +16,7 @@
     background-color: #ed1c24;
 }
 
-/* fees */
-
-.card-header-fees {
-    display: flex;
-    flex-direction: column;
-}
-.fees-card {
-    border-radius: 10px;
-    border: #000 solid 4px;
-    box-shadow: #530808 2px 2px 4px;
-    height: auto;
-    color: #000;
-    justify-content: center;
-    align-content: center;    
-}
-
-.fees-list {
-    list-style-type: square;
-    justify-content: center;
-    align-content: center;
-    text-align: left;
-}
-
-h6 {
-    font-weight: bold;
-}
-
-#standard {
-    background-color: #f2ff3e;
-}
-
-#premium {
-    background-color: #fdc529;
-}
-
-#dragons {
-    background-color: #98FB98;
-}
-
-#juniors {
-    background-color: #A33030;
-    color: #fff;
-}
-
-@media only screen and (max-width: 575px) {
-    .fees-list {
-        text-align: center;
-        list-style-position: inside;
-        display: inline;
-    }
-}
-
-/* venues */
+/* VENUES */
 
 .venue-card-group {
     background-color: #530808;
@@ -87,9 +34,7 @@ h6 {
 .venue-card-header {
     background-color: #530808;
     height: 50px;
-    font-size: 16px;
-    /* position: sticky;
-    top: 0; */
+    font-size: 16px;    
 }
 
 .venue-card-img {
@@ -113,4 +58,16 @@ h6 {
     .venue-card-header {
         font-size: 14px;
     }
+}
+
+/* ABOUT */
+
+#about, #benefits {
+    background-image: linear-gradient(to top, #6b1316, #781418, #86161a, #93171b, #a1181d, #ac191e, #b6191f, #c11a20, #cc1b21, #d71b22, #e21c23, #ed1c24);
+    color: #fff;
+    border-color: #fff;
+}
+#about:hover, #benefits:hover {
+    transform: none;
+    box-shadow: none;
 }

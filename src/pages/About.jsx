@@ -47,8 +47,7 @@ export default function About() {
                     </Card>
                 </Col>
             </CardGroup>
-            <h2 id="venues">Buckinghamshire Venues</h2>
-            <MABucksVenues />
+            
         </section>
     )
 }

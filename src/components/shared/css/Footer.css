@@ -1,6 +1,6 @@
 .footer {
     background-color: #000;  
-    background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");  
+    /* background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");   */
     width: 100%;
     color: #fff;
     margin: auto;
@@ -36,9 +36,10 @@
 .footer-card-group {
     width: 100%;
     align-content: space-between;    
-    display: block;
+    display: flex;
     margin: auto;
     padding: 10px;
+    justify-content: center;
 }
 
 .footer-card {
@@ -46,17 +47,20 @@
     border-radius: 10px;
     border: #ed1c24 1px solid;
     width: 45%;
-    height: 200px;
+    min-height: 200px;
     margin: auto;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
-.card-header {
+.card-header { 
     background-color: #000;
-}
+    width: 100%;
+} 
 
-.social-icon-col {    
+.social-icon-col { 
+    /* display: flex;
+    flex-direction: row;    */
     margin: auto;
 }
 
@@ -69,16 +73,14 @@ a:hover {
     color: #ed1c24;
 }
 
-.brand-icon {
+.fa-brands {
     width: auto;
     margin: 10px;
     transform: scale(2);
 }
 
-.brand-icon:hover {
-    background-color: #ed1c24;
-    border-radius: 50%;    
-    width: auto;
+.fa-brands:hover {
+    transform: scale(2.2);
 }
 
 .address {

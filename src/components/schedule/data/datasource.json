@@ -1,0 +1,488 @@
+{
+    "venueData": [
+        {
+            "id": 1,
+            "name": "Aylesbury HQ"
+        },
+        {
+            "id": 2,
+            "name": "Buckingham Park Community Center"
+        },
+        {
+            "id": 3,
+            "name": "Fairford Leys Center"
+        },
+        {
+            "id": 4,
+            "name": "Long Marston School"
+        },
+        {
+            "id": 5,
+            "name": "St. Mary's School, Haddenham"
+        },
+        {
+            "id": 6,
+            "name": "Princes Risborough Primary School"
+        },
+        {
+            "id": 7,
+            "name": "Wingrave Community Center"
+        }        
+    ],
+    "timelineVenueData": [
+        {
+            "id": 8,
+            "name": "Aylesbury HQ",
+            "startTime": "08:00:00",
+            "endTime": "22:00:00",
+            "days": [
+                {
+                    "id": "mon"
+                },
+                {
+                    "id": "tue"
+                },
+                {
+                    "id": "wed"
+                },
+                {
+                    "id": "thu"
+                },
+                {
+                    "id": "fri"
+                },
+                {
+                    "id": "sat"
+                },
+                {
+                    "id": "sun"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Buckingham Park Community Center",
+            "startTime": "16:00:00",
+            "endTime": "19:00:00",
+            "days": [
+                {
+                    "id": "tue"
+                },
+                {
+                    "id": "thu"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Fairford Leys Center",
+            "startTime": "10:00:00",
+            "endTime": "20:00:00",
+            "days": [
+                {
+                    "id": "thu"
+                },
+                {
+                    "id": "fri"
+                },
+                {
+                    "id": "sat"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Long Marston School",
+            "startTime": "08:00:00",
+            "endTime": "09:00:00",
+            "days": [
+                {
+                    "id": "thu"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "St. Mary's School, Haddenham",
+            "startTime": "16:00:00",
+            "endTime": "20:00:00",
+            "days": [
+                {
+                    "id": "mon"
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Princes Risborough Primary School",
+            "startTime": "18:30:00",
+            "endTime": "19:15:00",
+            "days": [
+                {
+                    "id": "thu"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Wingrave Community Center",
+            "startTime": "18:00:00",
+            "endTime": "20:00:00",
+            "days": [
+                {
+                    "id": "wed"
+                }
+            ]
+        }
+        
+    ],
+    "groupEventsData": [
+        {
+            "groupEvent": "Little Dragons",
+            "details": "3 - 4 year olds",
+            "column-id": [
+                {
+                    "mon": [
+                        {
+                        "groupId":  [5, {"startTime": "16:15:00",
+                                         "endTime": "16:45:00"}
+                                    ]                             
+                        }
+                    ],
+                    "tue": [
+                        {
+                        "groupId":  [1, {"startTime": "16:15:00",
+                                         "endTime": "16:45:00"}
+                                    ]                             
+                        },
+                        {
+                        "groupId":  [2, {"startTime": "16:15:00",
+                                         "endTime": "16:45:00"}
+                                    ]
+                        }
+                    ], 
+                    "thu": [
+                        {
+                        "groupId":  [2, {"startTime": "16:15:00",
+                                         "endTime": "16:45:00"}
+                                    ]                             
+                        },
+                        {
+                        "groupId":  [3, {"startTime": "16:15:00",
+                                         "endTime": "16:45:00"}
+                                    ]
+                        }
+                    ],
+                    "fri": [
+                        {
+                        "groupId":  [1, {"startTime": "16:15:00",
+                                         "endTime": "16:45:00"}
+                                    ]                             
+                        }
+                    ],
+                    "sat": [
+                        {
+                        "groupId":  [1, {"startTime": "09:00:00",
+                                         "endTime": "10:00:00"}
+                                    ]                             
+                        },
+                        {
+                        "groupId":  [3, {"startTime": "10:00:00",
+                                         "endTime": "11:00:00"}
+                                    ]
+                        }
+                    ]
+                }
+            ],
+            "CategoryColor": "#98FB98"            
+        },
+        {
+            "groupEvent": "Mini Ninjas",
+            "id": [
+                {
+                    "mon": [
+                            {
+                            "groupId":  [1, {"startTime": "17:00:00",
+                                             "endTime": "17:45:00"}
+                                        ]                             
+                            },
+                            {
+                            "groupId":  [5, {"startTime": "17:00:00",
+                                             "endTime": "17:45:00"}
+                                        ]
+                            }
+                    ],
+                    "tue": [
+                            {
+                            "groupId":  [1, {"startTime": "17:00:00",
+                                             "endTime": "17:45:00"}
+                                        ]                             
+                            },
+                            {
+                            "groupId":  [2, {"startTime": "17:00:00",
+                                             "endTime": "17:45:00"}
+                                        ]
+                            }
+                    ], 
+                    "wed": [
+                            {                        
+                            "groupId":  [1, {"startTime": "17:00:00",
+                                             "endTime": "17:45:00"}
+                                        ]                             
+                            },
+                            {
+                            "groupId":  [7, {"startTime": "18:00:00",
+                                             "endTime": "18:45:00"}
+                                        ]
+                            }
+                    ],
+                    "thu": [
+                            {                        
+                            "groupId":  [2, {"startTime": "17:00:00",
+                                             "endTime": "17:45:00"}
+                                        ]
+                            },
+                            {
+                            "groupId":  [3, {"startTime": "17:00:00",
+                                             "endTime": "17:45:00"}
+                                        ]
+                            },
+                            {
+                            "groupId":  [4, {"startTime": "08:00:00",
+                                             "endTime": "08:45:00"}
+                                        ]                             
+                            },
+                            {
+                            "groupId":  [6, {"startTime": "18:30:00",
+                                             "endTime": "19:15:00"}
+                                            ]
+                            }
+                    ],
+                    "fri": [
+                            {                        
+                            "groupId":  [1, {"startTime": "17:00:00",
+                                             "endTime": "17:45:00"}
+                                        ]
+                            },
+                            {
+                            "groupId":  [3, {"startTime": "16:15:00",
+                                             "endTime": "17:00:00"}
+                                        ]
+                            }
+                    ],
+                    "sat": [
+                            {
+                            "groupId":  [1, {"startTime": "10:00:00",
+                                             "endTime": "10:45:00"}
+                                        ]
+                            },
+                            {
+                            "groupId":  [3, {"startTime": "11:00:00",
+                                             "endTime": "11:45:00"}
+                                        ]
+                            }
+                    ]
+                }
+            ],
+            "CategoryColor": "#CC5757"            
+        },
+        {
+            "groupEvent": "Juniors MA",
+            "id": [
+                {
+                    "mon": [
+                            {
+                            "groupId":  [1, {"startTime": "18:00:00"},
+                                            {"endTime": "18:45:00"}
+                                        ]                             
+                            },
+                            {
+                            "groupId":  [5, {"startTime": "18:00:00", 
+                                             "endTime": "18:45:00", 
+                                             "Details": "8 - 9 year olds"},
+                                            {"startTime": "19:00:00", 
+                                             "endTime": "19:45:00", 
+                                             "Details": "10 - 11 year olds"}
+                                        ]
+                            }
+                    ],
+                    "tue": [
+                            {
+                            "groupId":  [1, {"startTime": "18:00:00",
+                                             "endTime": "18:45:00"}
+                                        ]                             
+                            },
+                            {
+                            "groupId":  [2, {"startTime": "18:00:00",
+                                             "endTime": "18:45:00"}
+                                        ]
+                            }
+                    ], 
+                    "wed": [
+                            {                        
+                            "groupId":  [1, {"startTime": "18:00:00",
+                                             "endTime": "18:45:00"}
+                                        ]                             
+                            },
+                            {
+                            "groupId":  [7, {"startTime": "18:00:00",
+                                             "endTime": "18:45:00"}
+                                        ]
+                            }
+                    ],
+                    "thu": [
+                            {                        
+                            "groupId":  [2, {"startTime": "18:00:00",
+                                             "endTime": "18:45:00"}
+                                        ]
+                            },
+                            {
+                            "groupId":  [3, {"startTime": "18:00:00",
+                                             "endTime": "18:45:00"}
+                                        ]
+                            },
+                            {
+                            "groupId":  [6, {"startTime": "18:30:00",
+                                             "endTime": "19:15:00"}
+                                        ]
+                            }
+                    ],
+                    "fri": [
+                            {                        
+                            "groupId":  [1, {"startTime": "18:00:00",
+                                             "endTime": "18:45:00"}
+                                        ]
+                            },
+                            {
+                            "groupId":  [3, {"startTime": "17:15:00",
+                                             "endTime": "18:00:00"}
+                                        ]
+                            }
+                    ],
+                    "sat": [
+                            {
+                            "groupId":  [1, {"startTime": "11:00:00", 
+                                             "endTime": "11:45:00", 
+                                             "Details": "8 - 10 year olds"},
+                                            {"startTime": "12:00:00", 
+                                             "endTime": "12:45:00", 
+                                             "Details": "10 - 12 year olds"}
+                                        ]
+                            },
+                            {
+                            "groupId":  [3, {"startTime": "12:00:00",
+                                             "endTime": "12:45:00"}
+                                        ]
+                            }
+                    ]
+                }
+            ],
+            "CategoryColor": "#A33030"
+        },
+        {
+            "groupEvent": "Teens MA",
+            "id": [
+                {
+                    "mon": [
+                            {
+                            "groupId":  [1, {"startTime": "19:00:00",
+                                             "endTime": "19:45:00"}
+                                        ]                             
+                            }
+                    ],
+                    "tue": [
+                            {
+                            "groupId":  [1, {"startTime": "19:00:00",
+                                             "endTime": "19:45:00"}
+                                        ]                             
+                            }
+                    ], 
+                    "wed": [
+                            {                        
+                            "groupId":  [1, {"startTime": "19:00:00",
+                                             "endTime": "19:45:00"}
+                                        ]                             
+                            },
+                            {
+                            "groupId":  [7, {"startTime": "19:00:00",
+                                             "endTime": "19:45:00"}
+                                        ]
+                            }
+                    ],
+                    "thu": [
+                            {                        
+                            "groupId":  [1, {"startTime": "19:00:00",
+                                             "endTime": "19:45:00"}
+                                        ]
+                            },
+                            {
+                            "groupId":  [3, {"startTime": "19:00:00", 
+                                             "endTime": "19:45:00"}
+                                        ]
+                            }
+                    ],
+                    "sat": [
+                            {
+                            "groupId":  [1, {"startTime": "13:00:00", 
+                                             "endTime": "13:45:00"},
+                                            {"startTime": "14:00:00", 
+                                             "endTime": "14:45:00", 
+                                             "Details": "Elite Class, Invite Only"}
+                                        ]
+                            }
+                    ]
+                }
+            ],
+            "CategoryColor": "#A35E30"
+        },
+        {
+            "groupEvent": "S.E.N MA",
+            "id": [
+                {
+                    "sat": [
+                            {
+                            "groupId":  [1, {"startTime": "12:10:00", 
+                                             "endTime": "12:25:00", 
+                                             "Details": "5 - 11 year olds"}
+                                        ]
+                            }
+                    ]
+                }
+            ],
+            "CategoryColor": "#fcf26a"
+        },
+        {
+            "groupEvent": "Home Ed MA",
+            "id": [
+                {
+                    "fri": [
+                            {
+                            "groupId":  [1, {"startTime": "11:00:00", 
+                                            "endTime": "11:45:00", 
+                                            "Details": "5 - 11 year olds"}
+                                        ]
+                            }
+                    ]
+                }
+
+            ],
+            "CategoryColor": "#9ecbf5"
+        },
+        {
+            "groupEvent": "Schools MA",
+            "id": [
+                {
+                    "thu": [
+                            {
+                            "groupId":  [4, {"startTime": "08:00:00", 
+                                            "endTime": "08:45:00", 
+                                            "Details": "School Pupils Only (5 - 11 year olds)"}
+                                        ]
+                            }
+                    ]
+                }
+            ],
+            "CategoryColor": "#e090f8"
+        }
+    ]
+}

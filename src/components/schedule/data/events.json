@@ -1,0 +1,11 @@
+[
+    {
+        "eventID": 1,
+        "groupName": "Little Dragons",
+        "groupDetails": "3 - 4 year olds",
+        "columnID": "mon",
+        "index": "16",
+        "timeslot_start": "16:15:00",
+        "timeslot_end": "16:45:00"
+    }
+]

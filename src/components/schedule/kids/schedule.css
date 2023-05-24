@@ -1,0 +1,167 @@
+@import url("../../../styles/theme.css");
+
+.zks-navigation-select {
+  margin-bottom: 20px;
+  padding: 0 15px;
+  width: auto;
+  height: 40px;
+  border: 4px solid;
+  border-color: var(--dark-red);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.zks-shortcode-table {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f4f4ee;
+}
+
+.icon-th {
+  background-color: #d8d8d800;
+  color: #222;
+  margin: auto;
+  border: #fff 1px solid;
+  text-align: center;
+}
+
+table {
+  empty-cells: show;
+  border-collapse: separate;
+  border-spacing: 0;  
+}
+
+td {
+  border: 1px solid #000;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.zks-shortcode-hours, .zks-shortcode-row-th {
+  height: 85px;
+  width: auto;
+  padding: 4px 16px;
+  background-color: #f30707d0; 
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-shadow: 1px 1px #000;
+  border: #fff 1px solid;
+}
+
+
+.zks-shortcode-table thead .zks-shortcode-row-th tr.zks-shortcode-row th:first-child::before, .xs-dark-time-table .zks-shortcode-table thead tr.zks-shortcode-row th:first-child::before {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.zks-shortcode-table thead tr.zks-shortcode-row-th th:first-child {
+  background: #000;
+  color: #fff;
+}
+
+.zks-shortcode-wrapper .zks-shortcode-table tr.zks-shortcode-row th {
+  background-color: red;
+  border: 1px solid #fff;
+  text-align: center;
+  text-shadow: 1px 1px #000;
+  color: #fff;
+  padding: 0.25rem 1rem;
+  overflow-wrap: normal;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  
+}
+
+.zks-shortcode-table thead tr.zks-shortcode-row th {
+  text-transform: uppercase;
+}
+
+.zks-shortcode-table tbody tr .zks-shortcode-event {
+  /* border: 0; */
+  border-width: 1px 2px 2px 1px;
+  border-style: groove;
+  background: 0 0;
+  border-color: #f8272734;
+}
+
+.zks-shortcode-table tbody tr .zks-shortcode-event>div[data-type=event] {
+  outline: 0;
+  transition: all .4s ease;
+}
+
+.zks-shortcode-wrapper .zks-shortcode-table tbody .zks-event-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.zks-shortcode-table tbody tr .zks-shortcode-event>div[data-type=event] .zks-inner-event-content .event-title {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 12px !important;
+  line-height: 1;
+  color:rgba(237, 28, 35, 0.76)
+}
+  
+  #dragons {
+    background: var(--dragons);
+    padding: 5px;
+  }
+  
+  #ninjas {
+    background: var(--mini-ninjas);
+    padding: 5px;
+  }
+  
+  #juniors {
+    background: var(--juniors);
+    padding: 5px;
+  }
+  #card-junior, #card-junior .class-card-header {
+    color: #fff;
+  }
+  
+  #teen {
+    background: var(--teens);
+    padding: 5px;
+  }
+  #card-teen, #card-teen .class-card-header {
+    color: #fff;
+  }
+
+  .classes-card-group .class-card-header {
+    color: #000;
+  }
+
+  .class-card-subtitle {
+    font-weight: 700;
+  }
+
+  #card-sen {
+    background-color: #229AF0;
+    padding: 10px;
+    color: #fff;
+  }
+  #card-sen > .class-card-header {
+    color: #fff;
+  }
+
+  #card-homeed {
+    background-color: #ff7f38;
+    padding: 10px;
+  }
+
+  #card-schools {
+    background-color: #fdf149;
+    padding: 10px;
+  }
