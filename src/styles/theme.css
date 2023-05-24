@@ -25,6 +25,12 @@
     --aqua: #3ec6eb;
     --emerald: #1bc99f;
   
+    --aluminium-dark-red-gradient: linear-gradient(
+      153.07deg,
+      var(--dark-aluminium) -2.47%,
+      var(--dark-red) 102.78%
+    );
+    
     --yellow-mandarine-gradient: linear-gradient(
       153.07deg,
       var(--yellow) -2.47%,

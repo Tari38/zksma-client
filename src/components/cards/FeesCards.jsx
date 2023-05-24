@@ -1,7 +1,7 @@
 import { Card, CardGroup } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDragon, faStar, faTrophy, faUserNinja } from "@fortawesome/free-solid-svg-icons";
-import "./Fees.css";
+import "./css/FeesCards.css";
 
 export default function FeesCards() {
     return (
@@ -11,7 +11,7 @@ export default function FeesCards() {
                     <Card.Header className="card-header-fees">
                         <FontAwesomeIcon 
                         icon={faStar} 
-                        style={{color: "#eeff00",}} />
+                        style={{color: "#ffe600",}} />
                         Standard Pack
                     </Card.Header>
                     <Card.Body className="fees-body">
@@ -30,7 +30,7 @@ export default function FeesCards() {
                     <Card.Header className="card-header-fees">
                         <FontAwesomeIcon 
                         icon={faTrophy} 
-                        style={{color: "#ffea00",}} />
+                        style={{color: "#2997fd",}} />
                         Premium Pack
                     </Card.Header>
                     <Card.Body className="fees-body">
@@ -44,7 +44,7 @@ export default function FeesCards() {
                     </Card.Body>
                 </Card>
 
-                <Card id="dragons" className="fees-card">
+                <Card id="dragons-fee" className="fees-card">
                     <Card.Header className="card-header-fees">
                         <FontAwesomeIcon 
                         icon={faDragon} 
@@ -67,7 +67,7 @@ export default function FeesCards() {
                     </Card.Body>
                 </Card>
                 
-                <Card id="juniors" className="fees-card">
+                <Card id="juniors-fee" className="fees-card">
                     <Card.Header className="card-header-fees">
                         <FontAwesomeIcon 
                         icon={faUserNinja} 

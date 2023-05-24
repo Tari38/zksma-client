@@ -1,8 +1,11 @@
+import "./css/Timetable.css";
+import "./pages.css";
+
 export default function Timetable() {
     return (   
-        <>
-        <h1>Class Timetable by day</h1>
-        <div> 
+    <div className="timetable-page">
+        <h1>Class Timetable</h1>
+        <div > 
             <table width="100%" border="0">
                 <tr>
                     <td className="dragon">
@@ -792,6 +795,6 @@ export default function Timetable() {
             </div>
             </div>
     </section> 
-    </>
+    </div>
    )
 }

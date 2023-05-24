@@ -1,21 +1,24 @@
 #about-hero {
-    background-image: url("../../assets/logos/zks-logowithtext.png");
+    background-image: url("../../assets/logos/newlogo.png");
     background-size: contain;
     background-repeat: round;
-    min-height: 300px;
+    background-position: center;
+    height: 200px;
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
 #about-hero h1 {
-    background-color: #0000008a;
-    min-height: 300px;
+    background-color: #00000075;
+    padding-top: 20px;
+    height: 300px;
     width: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
     color: #fff;
+    text-shadow: 2px 2px #000;
 }
 
 .about-row {

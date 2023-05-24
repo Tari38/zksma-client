@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Layout } from './components';
-import { About, AdultsClasses, Contact, FAQ, Fees, Groups, KidsClasses, Home, GradingExams, NotFound } from './pages';
+import { About, AdultsClasses, Contact, FAQ, Fees, KidsClasses, Home, GradingExams, Timetable, NotFound } from './pages';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
           <Route path="adultsclasses" element={<AdultsClasses />} />
           <Route path="kidsclasses" element={<KidsClasses />} />
           <Route path="grading" element={<GradingExams />} />
-          <Route path="groups" element={<Groups />} />
+          <Route path="timetable" element={<Timetable />} />
           <Route path="contact" element={<Contact />} />
           <Route path="notfound" element={<NotFound />} />
         </Route>

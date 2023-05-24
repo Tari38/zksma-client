@@ -24,8 +24,8 @@ export default function GradingsExams() {
                                 </ul>                            
                         </article>
                     
-                        <CardGroup className="tag-group">
-                            <Card className="winter-tag">
+                            <CardGroup className="tag-group">
+                                <Card className="winter-tag">
                                     <Card.Title>Winter Tag</Card.Title>
                                     <Card.Text>Lesson structure from September to December.</Card.Text>
                                 </Card>

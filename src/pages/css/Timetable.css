@@ -1,0 +1,5 @@
+@import url("../../styles/theme.css");
+
+.timetable-page {
+    background: var(--red-darkred-gradient);
+}

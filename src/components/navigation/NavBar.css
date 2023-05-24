@@ -60,3 +60,22 @@
 
     }
 }
+
+#nav-dropdown-menu {
+    background-color: #000;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+#dropdown-basic-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    margin-top: -10px;
+}
+
+.dropdown {
+    padding: 0;
+}

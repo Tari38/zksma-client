@@ -12,6 +12,7 @@
 .class-card-header {
     color: #fff;
     width: 100%;
+    background-color: transparent;
 }
 
 .class-card-logo {
@@ -21,5 +22,9 @@
 }
 
 .class-card-text {
+    padding: 10px;
+}
 
+.class-card-subtitle {
+    background-color: transparent;
 }

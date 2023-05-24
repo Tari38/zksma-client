@@ -64,12 +64,12 @@ export const SENMACard = () => {
             <Card.Header className="class-card-header">
                 S.E.N MA
             </Card.Header>
-                {/* <Card.Body> */}
+                <Card.Body>
                     <Card.Img className="class-card-logo" src={FooterLogo}></Card.Img>
                     <Card.Text className="class-card-text">
-                        It’s no secret that a martial arts program is one of the best extracurricular activities a child can participate in. For children with special educational needs the benefits are invaluable because of the inherit structure and discipline that ZKS MA bring to a child’s daily life.
+                        It’s no secret that a martial arts program is one of the best extracurricular activities a child can participate in! For children with special educational needs the benefits are invaluable because of the inherit structure and discipline that ZKS MA bring to a child’s daily life.
                     </Card.Text>
-                {/* </Card.Body> */}
+                </Card.Body>
             <Card.Footer className="class-card-subtitle">
                 Special Educational Needs
             </Card.Footer>
@@ -86,7 +86,7 @@ export const HomeEdMACard = () => {
                 <Card.Body>
                     <Card.Img className="class-card-logo" src={FooterLogo}></Card.Img>
                         <Card.Text className="class-card-text">
-                            Our class for home educated children is a great place to socialise and meet other children. We have noticed that some parents take children out of main stream education due to childhood anxiety. ZKS MA Home Ed has been a great vehicle to deal with their anxiety and plus they become great friends in class.
+                            Our class for home educated children is a great place to socialise and meet other children. Our Home Ed MA class has been a great vehicle to deal with their anxieties, plus making great friends on the way.
                         </Card.Text>
                 </Card.Body>
             <Card.Footer className="class-card-subtitle">

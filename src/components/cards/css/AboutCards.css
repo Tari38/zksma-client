@@ -1,22 +1,29 @@
 #about, #benefits {
     background-image: linear-gradient(to top, #6b1316, #781418, #86161a, #93171b, #a1181d, #ac191e, #b6191f, #c11a20, #cc1b21, #d71b22, #e21c23, #ed1c24);
     color: #fff;
-    border-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
 }
 #about:hover, #benefits:hover {
     transform: none;
-    /* box-shadow: none; */
+    border: 2px solid red;
+    box-shadow: none;
 }
 
 #groups, #kids-classes {
     color: #000;
+    border: 2px solid #fff;
+    border-radius: 10px;
 }
 
 #groups:hover, #kids-classes:hover {
-    transform: none;    
+    transform: none;   
+    border: 2px solid red; 
+    box-shadow: none;
 }
 
 .about-card-header {
     color: #fff;
+    background-color: #000;
 }
 

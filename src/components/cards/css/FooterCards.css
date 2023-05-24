@@ -1,0 +1,49 @@
+#footer-card {
+    background-color: #000;
+    border: 1px solid white;
+    width: auto;
+    min-height: 200px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+}
+#footer-card:hover {
+    transform: none;
+    box-shadow: none;
+    border: 1px solid red;
+    transition: .5s ease;
+}
+
+.footer-card-header { 
+    background-color: inherit;
+    width: 100%;
+} 
+
+.social-icon-col { 
+    margin: auto;
+}
+
+.fa-brands {
+    width: auto;
+    margin: 10px;
+    transform: scale(2);
+    transition: .5s ease;
+}
+
+.fa-brands:hover {
+    transform: scale(3);
+    transition: .5s ease;
+}
+
+.address {
+    text-align: center;
+    line-height: 1.8rem;
+}
+
+.social {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,14 +1,13 @@
 /* fees */
 
 .card-header-fees {
-    display: flex;
-    flex-direction: column;
     color: #fff;
     background-color: #000;
+    display: flex;
+    flex-direction: column;
 }
-.fees-card {
-    border-radius: 10px 10px 0 0;
-    border: #000 solid 4px;
+
+.fees-card {  
     height: auto;
     color: #000;
     justify-content: center;
@@ -24,22 +23,44 @@
 
 h6 {
     font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px #000;
 }
 
 #standard {
-    background-color: #f2ff3e;
+    background-color: #ffe600;
+    color: #000;
+    border: none;
+}
+#standard:hover, #premium:hover, #dragons-fee:hover, #juniors-fee:hover {
+    transform: none;
+}
+#standard h6 {
+    color: #000;
+    text-shadow: none;
+    border: none;
 }
 
 #premium {
-    background-color: #29e4fd;
+    background-color: #2997fd;
+    color: #fff;
+    border: none;
 }
 
-#dragons {
+#dragons-fee {
     background-color: #98FB98;
+    color: #000;
+    border: none;
+}
+#dragons-fee h6 {
+    color: #000;
+    text-shadow: none;
 }
 
-#juniors {
+#juniors-fee {
     background-color: #A33030;
+    color: #fff;
+    border: none;
 }
 
 @media only screen and (max-width: 575px) {

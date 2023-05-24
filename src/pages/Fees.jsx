@@ -1,4 +1,4 @@
-import FeesCards from "../components/cards/Fees";
+import FeesCards from "../components/cards/FeesCards";
 import "./css/Fees.css";
 
 export default function Fees() {
