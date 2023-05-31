@@ -32,7 +32,8 @@ table {
 }
 
 td {
-  border: 1px solid #000;
+  background-color: #fff;
+  border: 1px solid #f3f0f0;
 }
 
 tr {
@@ -88,7 +89,7 @@ tr {
   border-width: 1px 2px 2px 1px;
   border-style: groove;
   background: 0 0;
-  border-color: #f8272734;
+  border-color: #ffffff;
 }
 
 .zks-shortcode-table tbody tr .zks-shortcode-event>div[data-type=event] {

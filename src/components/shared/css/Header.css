@@ -31,7 +31,7 @@
 }
 
 @media only screen and (max-width: 450px) {
-    .contact-link {
+    .header-contact-link {
         font-size: 10px;
     }
     .contact-bar {

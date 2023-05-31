@@ -1,4 +1,4 @@
-import { Container, Nav, Navbar, DropdownButton, Dropdown, NavItem } from "react-bootstrap";
+import { Container, Offcanvas, Nav, Navbar, DropdownButton, Dropdown, NavItem } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import NavLogo from "../../assets/logos/newlogo.png";
 import "./NavBar.css";
@@ -8,7 +8,7 @@ export default function NavBar() {
     return (
         <div id="top">
             
-            <Navbar expand="lg" collapseOnSelect className="navbar">
+            <Navbar expand="md" collapseOnSelect className="navbar">
                 <Container fluid>  
                 <Navbar.Brand>
                     <img src={NavLogo} className="nav-logo" alt=""></img>
@@ -16,7 +16,13 @@ export default function NavBar() {
                     <p className="nav-logo-p">Martial Arts</p> */}
                 </Navbar.Brand>          
                 <Navbar.Toggle className="nav-toggler" aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
+                <Navbar.Offcanvas id={`offcanvasNavbar-expand-md`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-md`}
+              placement="end">
+                <Offcanvas.Header closeButton>
+                    <Offcanvas.Title>ZKS Menu</Offcanvas.Title>
+                </Offcanvas.Header>
+                <Offcanvas.Body>
                     <Nav className="me-auto nav-links nav">
                         
                         <NavLink exact className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="/">Home</NavLink>
@@ -34,11 +40,10 @@ export default function NavBar() {
                         
                         <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="shop">Shop</NavLink> 
 
-                        <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="timetable">Timetable</NavLink> 
-
                         <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')}to="contact">Contact</NavLink>   
-                    </Nav>                        
-                </Navbar.Collapse>
+                    </Nav>   
+                    </Offcanvas.Body>                     
+                </Navbar.Offcanvas>
                 </Container>
             </Navbar>
             

@@ -1,100 +1,49 @@
 import "./schedule.css";
 import "../css/schedule_base.css";
-import { useMemo } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
+import TabSelector from "../TabFilter";
 
-import SelectedVenue from "./SelectedVenue";
-import { columnData, groupData, rowData, zksmahqData, bpccData, flcData, lmsData, smshData, prpsData, wccData } from "../data-source";
+export default function ScheduleBase() {        
+                  
+    return (
+        <>        
 
-
-export default function ScheduleBase() {
-        
-        const groupEventsData = useMemo(() => [zksmahqData, bpccData, flcData, lmsData, smshData, prpsData, wccData], []);
-        
-        
-        return (
-        <>
-        <div className="zks-shortcode-wrapper zks-table-responsive ">
-        <br />        
-
-        <SelectedVenue  /> 
-
-        {/* <div className="selector-wrapper">           
-
-               <div className="schedule-container">
-               <h1 className="timetable-h1">{selectedVenue} Timetable</h1>
-                    <select id="selectedVenue" className="selector table-filter" value={selectedVenue} onChange={e => setSelectedVenue(e.target.value)} >
-                    {venueData.map((data) => {
-                        if (!data.venueID) return <option defaultValue={null} hidden >Select a Venue</option>;
-                         return (
-                            <>
-                            <option id={data.shortcode} value={data.name}>{data.name}</option>
-                        
-                        </>
-                        )
-                    })}
-                    </select>                    
-              </div>    
-        </div>  */}
-        
-        <table className="zks-shortcode-table zks-theme-mode"  data-hide_empty_row="1">      
-            <thead id="schedule_base_head"> 
-                
-                            
-                <tr className="zks-shortcode-row zks-shortcode-row-th">    
-                    {columnData.map((data) => {
-                           if(!data.column_id) 
-                                return <th><FontAwesomeIcon icon={faCalendarDays} style={{color: "#ffffff",}} />
-                                        </th>   
-                                        return (
-                                        <th>{data.name}</th>
-                                        )
-                                })}
-                </tr>
-            </thead>
-                                          
-            {rowData.map((data) => {
-                if (!rowData) return <tr />
-                    return (
-                        <tr className="zks-shortcode-row" data-rowIndex={data.rowIndex}>
-                            <td className="zks-shortcode-hours" colSpan="1">{data.firstCell}</td>
-                        </tr>
-                    )
-                })}
-                {rowData.map( row => {
-                       return( <tbody 
-                                className="table-grid">
-                                {[groupData].map((data) => {
-                                    if(!groupData) return <tr />
-                                        return (
-                                        <>                         <tr className="zks-shortcode-row-8" data-index="8">              
-                                            <td className="zks-shortcode-event zks-event-vertical-default"  data-column_id={groupEventsData.column_id}>
-                                                <h5>{data.name}</h5>
-                                                {" "}
-                                                <p>{data.details}</p>
-                                                {" "}
-                                                {groupEventsData.startTime}
-                                                <span className="timeslot-delimiter">
-                                                {" "}
-                                                -{" "}
-                                                </span>
-                                                {" "}
-                                                {groupEventsData.endTime}
-                                        </td>
-                                </tr>                        
-                                        </>
-                                        )}
-                                )}
-                        </tbody>
-                         )
-                        })}
-                </table>                
-                
-        </div>
+        <TabSelector />
+        {/* <FilterData data={data} /> */}
         </>     
-        )
-}           
+)
+}    
+        
+        // <table id="schedule-table" className="zks-shortcode-table zks-theme-mode"  data-hide_empty_row="1" table-striped >{search(data).map((item) => (
+        // <>  
+        //     <thead id="schedule_base_head" key={item.column_id}>                     
+        //         <tr className="zks-shortcode-row zks-shortcode-row-th">    
+        //             <th><FontAwesomeIcon icon={faCalendarDays} style={{color: "#ffffff",}} />
+        //             </th>
+        //             <th>{item.name}</th>
+        //         </tr>
+        //     </thead>        
+
+        // <tbody className="table-grid">
+        //         <tr className="zks-shortcode-row" >              
+        //             <td className="zks-shortcode-event zks-event-vertical-default" >
+        //                 <h5 className="groupTitle">{item.groupName}</h5>
+        //                 {" "}
+        //                 <p>{item.details}</p>
+        //                 {" "}
+        //                 {item.startTime}
+        //                 <span className="timeslot-delimiter">
+        //                 {" "}
+        //                 -{" "}
+        //                 </span>
+        //                 {" "}
+        //                 {item.endTime}
+        //             </td>
+        //         </tr>
+        //     </tbody>
+        //     </> 
+        // ))}                       
+        // </table>
+        
                         
                            
                 
@@ -533,6 +482,4 @@ export default function ScheduleBase() {
                             data-column_id="sun"
                             colSpan="1"
                             data-row_height="45"></td>
-        </tr> */     
-
- 
+        </tr> */
