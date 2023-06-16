@@ -1,4 +1,5 @@
 import { Button } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronUp } from '@fortawesome/free-solid-svg-icons';
 import "./Buttons.css";
@@ -29,7 +30,7 @@ export const MemberAreaButton = () => {
 
 export const KidsClassesButton = () => {
     return (
-        <Button className="classes-btn" href="/Classes_Kids">
+        <Button as={NavLink} className="classes-btn" to="/kidsclasses">
             Childrens' Classes
         </Button>
     )
@@ -37,7 +38,7 @@ export const KidsClassesButton = () => {
 
 export const AdultsClassesButton = () => {
     return (
-        <Button className="classes-btn" href="/Classes_Adults">
+        <Button as={NavLink} className="classes-btn" to="/adultsclasses">
             Adults' Classes
         </Button>
     )
@@ -45,7 +46,7 @@ export const AdultsClassesButton = () => {
 
 export const BucksVenuesButton = () => {
     return (
-        <Button className="bucks-btn" href="./about#location-maps" >
+        <Button as={NavLink} className="bucks-btn" to="/about">
             Buckinghamshire
         </Button>
     )
@@ -53,7 +54,7 @@ export const BucksVenuesButton = () => {
 
 export const HertsVenuesButton = () => {
     return (
-        <Button className="herts-btn" href="./about#location-maps" >
+        <Button as={NavLink} className="herts-btn" to="/about">
             Hertfordshire
         </Button>
     )

@@ -20,6 +20,8 @@ function App() {
           <Route path="grading" element={<GradingExams />} />
           <Route path="contact" element={<Contact />} />
           <Route path="notfound" element={<NotFound />} />
+          <Route path="locations" element={<About />} />
+          <Route path="herts-locations" element={<About />} />
         </Route>
       </Routes>
     </div>

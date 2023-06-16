@@ -4,7 +4,7 @@ import "./LocationMaps.css";
 export default function LocationMaps() {
     return (
         <>
-        <h1>Our Venues</h1>
+        <h1 id="locations">Our Venues</h1>
         <h2>Buckinghamshire</h2>
         <Row>                 
             <Card id="zksma_hq-map" className="location-card">
@@ -89,7 +89,7 @@ export default function LocationMaps() {
         </Row>
 
         <hr />
-        <h2>Hertfordshire</h2>
+        <h2 id="herts-locations">Hertfordshire</h2>
         <Card id="zksma_hq-map" className="location-card">
                     <Card.Header className="location-card-header">Nascot Wood Junior School
                             </Card.Header>

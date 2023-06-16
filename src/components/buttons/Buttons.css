@@ -55,6 +55,7 @@
 .bucks-btn, .herts-btn {
     width: 99%;
     border-radius: none;
+    background: var(--red-darkred-gradient);
 }
 
 .bucks-btn:hover, .herts-btn:hover {
