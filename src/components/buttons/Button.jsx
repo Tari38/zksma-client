@@ -29,7 +29,7 @@ export const MemberAreaButton = () => {
 
 export const KidsClassesButton = () => {
     return (
-        <Button className="classes-btn" href="/kidsclasses">
+        <Button className="classes-btn" href="/Classes_Kids">
             Childrens' Classes
         </Button>
     )
@@ -37,7 +37,7 @@ export const KidsClassesButton = () => {
 
 export const AdultsClassesButton = () => {
     return (
-        <Button className="classes-btn" href="/adultsclasses">
+        <Button className="classes-btn" href="/Classes_Adults">
             Adults' Classes
         </Button>
     )
