@@ -1,4 +1,4 @@
-import { CardGroup, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FooterAddressCard, FooterSocialCard } from "../cards/FooterCards";
