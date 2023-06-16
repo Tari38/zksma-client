@@ -1,5 +1,6 @@
 import { Col, Row } from "react-bootstrap";
 import { AboutCard1, AboutCard2, AboutCard3, AboutCard4 } from "../components/cards/AboutCards";
+import InterestedCard from "../components/cards/InterestedCard";
 import HavocGrappling from "./HavocGrappling";
 import ScorpionMuayThai from "./ScorpionMuayThai";
 import LocationMaps from "../components/schedule/maps/LocationMaps";
@@ -40,6 +41,7 @@ export default function About() {
             <section id="location-maps">
                 <LocationMaps />
             </section>
+            <InterestedCard />    
         </>
     )
 }

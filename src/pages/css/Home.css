@@ -68,6 +68,7 @@ main {
 #venues {
     display: flex;
     flex-direction: row;
+    max-width: 100%;
     margin: auto;
     background-image: url("../../assets/backgrounds/dojo-bg.webp");  
     justify-content: center;  
@@ -75,4 +76,12 @@ main {
 }
 .venue-col {
     margin: auto;
+    justify-content: center;  
+    align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+    #venues {
+        flex-direction: column;
+    }
 }

@@ -12,12 +12,16 @@ export default function Footer() {
     <div className="footer">
         <div className="footer-bar-top"></div>
             
-            <Row className="brand-row">
-                <CardGroup className="footer-card-group">
-                    <FooterAddressCard />
-                    <FooterSocialCard />
-            </CardGroup>
-        </Row>       
+            {/* <Row className="brand-row"> */}
+                <Row className="footer-card-group">
+                    <Col>
+                        <FooterAddressCard />
+                    </Col>
+                    <Col>
+                        <FooterSocialCard />
+                    </Col>
+                </Row>
+            {/* </Row>        */}
         <div className="contact-bar">            
             <FontAwesomeIcon 
                 icon={faPhone} 

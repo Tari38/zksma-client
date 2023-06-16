@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ScheduleHQ, ScheduleBPCC, ScheduleFLC, SchedulePRPS, ScheduleSMSH, ScheduleWCC, ScheduleNWJS, ScheduleHCCS } from "./index";
-// import MobileTimetable from "../MobileTimetable";
+
 import "../css/selectedVenue.css";
 
 export const SelectedVenue = () => {
@@ -63,7 +63,9 @@ export const SelectedVenue = () => {
         </div>   
         <div id="chosen-venue">
             {timetable}            
-        </div>          
+        </div>   
+
+           
     </>     
     ) 
 }
