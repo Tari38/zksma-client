@@ -20,18 +20,9 @@
     width: 85px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-areas: 
-       "header header header header header header header header"
-       "td td td td td td td td";
-    grid-template-columns: repeat(8, 1fr);
-    
-}
-
-
-
-.zks-shortcode-event {
-    overflow: hidden;
-}
-
+@media only screen and (max-width: 800px) {
+    #schedule_base_head th {
+      font-size: 14px;
+      padding: 5px;
+    }
+  }

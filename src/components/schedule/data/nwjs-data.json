@@ -1,0 +1,20 @@
+{
+    "groups": [
+        {"dragons": "Little Dragons"}, 
+        {"ninjas": "Mini Ninjas"}, 
+        {"juniors": "Juniors MA"}, 
+        {"teens": "Teens MA"}, 
+        {"bjj": "Brazilian Jiujitsu"}, 
+        {"bbelt": "Black Belt"}
+    ],
+    "days": [
+        {"mon": "Monday"},
+        {"tue": "Tuesday"},
+        {"wed": "Wednesday"},
+        {"thu": "Thursday"},
+        {"fri": "Friday"},
+        {"sat": "Saturday"},
+        {"sun": "Sunday"}
+    ]
+}
+

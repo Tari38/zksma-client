@@ -1,14 +1,35 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendarDays, faLeftRight } from '@fortawesome/free-solid-svg-icons';
+import { columnData } from "../data/data-source.js";
+import { Card } from 'react-bootstrap';
+import "../css/";
+
 export default function ScheduleHQ() {
-        
+    
     return (
         <>
+        <h6 id="swipe-text">Swipe to View</h6>
+        <FontAwesomeIcon id="icon-showhide" icon={faLeftRight} style={{color: "#cb1010", fontSize: "30px",}} />      
+        <div className="scrollbar">
             <table className="zks-shortcode-table  zks-theme-mode"
                    id="flc"                          
                    data-hide_empty_row="1"
             >
-            <tbody data-venue_schedule="scheduleHQ" id="schedule">
+                <thead id="schedule_base_head"  >
+					<tr className="zks-shortcode-row zks-shortcode-row-th">
+				{columnData.map((data, name) => { 
+					if (!data.column_id) 
+					return  <th><FontAwesomeIcon icon={faCalendarDays} style={{color: "#ffffff"}} />
+							</th>                  
+							return (
+								<th key={name}>{data.name}</th>                                 
+								)
+							})}
+							</tr>
+				</thead> 
+            <tbody>
                 
-                <tr className="zks-shortcode-row-8" data-index="8">
+                {/* <tr className="zks-shortcode-row-8" data-index="8">
                         <td className="zks-shortcode-hours">08:00 am</td>
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="mon"
@@ -45,7 +66,7 @@ export default function ScheduleHQ() {
                             colspan="1"
                             data-row_height="45">
                         </td>                                   
-                    </tr>
+                    </tr> */}
                     <tr className="zks-shortcode-row-9" data-index="9">
                         <td className="zks-shortcode-hours">09:00 am</td>
                         <td className="zks-shortcode-event zks-event-vertical-default"
@@ -76,16 +97,44 @@ export default function ScheduleHQ() {
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sat"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
-                                
-                                <p className="timeslot">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="dragons" className="zks-inner-event-content">
+                                <Card.Header className="event-title">
+                                    Little Dragons
+                                </Card.Header>                       
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="09:00"
                                     className="timeslot-start"
                                 >
-                                    09:00 am
+                                    9:00 am
+                                </time>{" "}
+                                <span className="timeslot-delimiter">
+                                    {" "}
+                                    -{" "}
+                                </span>{" "}
+                                <time
+                                    datetime="09:30"
+                                    className="timeslot-end"
+                                >
+                                    9:30 am
+                                </time>                         
+                                </Card.Body>
+                                
+                            </Card>        
+                            <Card id="dragons" className="zks-inner-event-content">
+                                <Card.Header className="event-title">
+                                    Little Dragons
+                                </Card.Header>                       
+                                <Card.Body className="timeslot">
+                                {" "}
+                                <time
+                                    datetime="09:30"
+                                    className="timeslot-start"
+                                >
+                                    9:30 am
                                 </time>{" "}
                                 <span className="timeslot-delimiter">
                                     {" "}
@@ -96,9 +145,10 @@ export default function ScheduleHQ() {
                                     className="timeslot-end"
                                 >
                                     10:00 am
-                                </time>
-                                </p>
-                            </div>        
+                                </time>                         
+                                </Card.Body>
+                                
+                            </Card>       
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sun"
@@ -136,13 +186,14 @@ export default function ScheduleHQ() {
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sat"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="ninjas" className="zks-inner-event-content">
                                         {" "}
-                                        <h5 className="event-title">
+                                        <Card.Header className="event-title">
                                             Mini Ninjas
-                                        </h5>
-                                        <p className="timeslot">
+                                        </Card.Header>
+                                        <Card.Body className="timeslot">
                                         {" "}
                                         <time
                                             datetime="10:00"
@@ -160,8 +211,9 @@ export default function ScheduleHQ() {
                                         >
                                             10:45 am
                                         </time>
-                                        </p>
-                                    </div>
+                                        </Card.Body>
+                                        
+                                </Card>
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sun"
@@ -194,43 +246,19 @@ export default function ScheduleHQ() {
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="fri"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
-                                {" "}
-                                <h5 className="event-title">
-                                    Home Ed MA
-                                </h5>
-                                <p className="timeslot">
-                                {" "}
-                                <time
-                                    datetime="11:00"
-                                    className="timeslot-start"
-                                >
-                                    11:00 am
-                                </time>{" "}
-                                <span className="timeslot-delimiter">
-                                    {" "}
-                                    -{" "}
-                                </span>{" "}
-                                <time
-                                    datetime="11:45"
-                                    className="timeslot-end"
-                                >
-                                    11:45 am
-                                </time>
-                                </p>
-                            </div>        
+                            data-row_height="45">             
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sat"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="juniors" className="zks-inner-event-content">
                                         {" "}
-                                        <h5 className="event-title">
+                                        <Card.Header className="event-title">
                                             Juniors MA
-                                        </h5>
-                                        <p className="timeslot">
+                                        </Card.Header>
+                                        <Card.Body className="timeslot">
                                         {" "}
                                         <time
                                             datetime="11:00"
@@ -248,8 +276,39 @@ export default function ScheduleHQ() {
                                         >
                                             11:45 am
                                         </time>
-                                        </p>
-                                    </div>
+                                        </Card.Body>
+                                        
+                                    </Card>
+                                    <Card id="sen" className="zks-inner-event-content">
+                                        {" "}
+                                        <Card.Header className="event-title">
+                                            S.E.N MA
+                                        </Card.Header>
+                                        <Card.Subtitle className="class-card-subtitle">
+                                            <br />
+                                            4 - 8 years (autism friendly)
+                                        </Card.Subtitle>
+                                        <Card.Body className="timeslot">
+                                        {" "}
+                                        <time
+                                            datetime="11:10"
+                                            className="timeslot-start"
+                                        >
+                                            11:10 am
+                                        </time>{" "}
+                                        <span className="timeslot-delimiter">
+                                            {" "}
+                                            -{" "}
+                                        </span>{" "}
+                                        <time
+                                            datetime="11:25"
+                                            className="timeslot-end"
+                                        >
+                                            11:25 am
+                                        </time>
+                                        </Card.Body>
+                                        
+                                    </Card>
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sun"
@@ -287,13 +346,15 @@ export default function ScheduleHQ() {
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sat"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container"
+                            >
+                                <Card id="juniors" className="zks-inner-event-content">
                                         {" "}
-                                        <h5 className="event-title">
+                                        <Card.Header className="event-title">
                                             Juniors MA
-                                        </h5>
-                                        <p className="timeslot">
+                                        </Card.Header>
+                                        <Card.Body className="timeslot">
                                         {" "}
                                         <time
                                             datetime="12:00"
@@ -311,14 +372,19 @@ export default function ScheduleHQ() {
                                         >
                                             12:45 pm
                                         </time>
-                                        </p>
-                                    </div>
-                                    <div className="zks-inner-event-content">
+                                        </Card.Body>
+                                        
+                                    </Card>
+                                    <Card id="sen" className="zks-inner-event-content">
                                         {" "}
-                                        <h5 className="event-title">
+                                        <Card.Header className="event-title">
                                             S.E.N MA
-                                        </h5>
-                                        <p className="timeslot">
+                                        </Card.Header>
+                                        <Card.Subtitle className="class-card-subtitle">
+                                            <br />
+                                            8 - 11 years (autism friendly)
+                                        </Card.Subtitle>
+                                        <Card.Body className="timeslot">
                                         {" "}
                                         <time
                                             datetime="12:10"
@@ -336,8 +402,9 @@ export default function ScheduleHQ() {
                                         >
                                             12:25 pm
                                         </time>
-                                        </p>
-                                    </div>
+                                        </Card.Body>
+                                        
+                                    </Card>
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sun"
@@ -375,13 +442,14 @@ export default function ScheduleHQ() {
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sat"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="teens" className="zks-inner-event-content">
                                         {" "}
-                                        <h5 className="event-title">
+                                        <Card.Header className="event-title">
                                             Teens MA
-                                        </h5>
-                                        <p className="timeslot">
+                                        </Card.Header>
+                                        <Card.Body className="timeslot">
                                         {" "}
                                         <time
                                             datetime="13:00"
@@ -399,8 +467,9 @@ export default function ScheduleHQ() {
                                         >
                                             01:45 pm
                                         </time>
-                                        </p>
-                                    </div>
+                                        </Card.Body>
+                                        
+                                    </Card>
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sun"
@@ -438,14 +507,15 @@ export default function ScheduleHQ() {
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sat"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="bbelts-teens" className="zks-inner-event-content">
                                         {" "}
-                                        <h5 className="event-title">
-                                            Teens MA Elite
-                                        </h5>
-                                        <p>Invite Only</p>
-                                        <p className="timeslot">
+                                        <Card.Header className="event-title">
+                                            Teens Elite
+                                        </Card.Header>
+                                        <Card.Subtitle className="class-card-subtitle">Invite Only</Card.Subtitle>
+                                        <Card.Body className="timeslot">
                                         {" "}
                                         <time
                                             datetime="14:00"
@@ -463,8 +533,9 @@ export default function ScheduleHQ() {
                                         >
                                             02:45 am
                                         </time>
-                                        </p>
-                                    </div>
+                                        </Card.Body>
+                                        
+                                    </Card>
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sun"
@@ -472,7 +543,7 @@ export default function ScheduleHQ() {
                             data-row_height="45">
                         </td>                
                     </tr>
-                    <tr className="zks-shortcode-row-15" data-index="15">
+                    {/* <tr className="zks-shortcode-row-15" data-index="15">
                         <td className="zks-shortcode-hours">03:00 pm</td>
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="mon"
@@ -509,7 +580,8 @@ export default function ScheduleHQ() {
                             colspan="1"
                             data-row_height="45">
                         </td>                
-                    </tr>
+                    </tr> */}
+                    <br />
                     <tr className="zks-shortcode-row-16" data-index="16">
                         <td className="zks-shortcode-hours">04:00 pm</td>
                         <td className="zks-shortcode-event zks-event-vertical-default"
@@ -520,13 +592,14 @@ export default function ScheduleHQ() {
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="tue"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="dragons" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
+                                <Card.Header className="event-title">
                                     Little Dragons
-                                </h5>
-                                <p className="timeslot">
+                                </Card.Header>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="16:15"
@@ -544,8 +617,9 @@ export default function ScheduleHQ() {
                                 >
                                     04:45 pm
                                 </time>
-                                </p>
-                            </div>        
+                                </Card.Body>
+                                
+                            </Card>        
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="wed"
@@ -560,13 +634,14 @@ export default function ScheduleHQ() {
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="fri"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="dragons" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
+                                <Card.Header className="event-title">
                                     Little Dragons
-                                </h5>
-                                <p className="timeslot">
+                                </Card.Header>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="16:15"
@@ -584,8 +659,9 @@ export default function ScheduleHQ() {
                                 >
                                     04:45 pm
                                 </time>
-                                </p>
-                            </div>        
+                                </Card.Body>
+                                
+                            </Card>        
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sat"
@@ -603,14 +679,15 @@ export default function ScheduleHQ() {
                             <td className="zks-shortcode-event zks-event-vertical-default"
                                 data-column-id="mon"
                                 colspan="1"
-                                data-row_height="45">
+                                data-row_height="45"
+                                id="card-container">
                         
-                                    <div className="zks-inner-event-content">
+                                    <Card id="ninjas" className="zks-inner-event-content">
                                         {" "}
-                                        <h5 className="event-title">
+                                        <Card.Header className="event-title">
                                             Mini Ninjas
-                                        </h5>
-                                        <p className="timeslot">
+                                        </Card.Header>
+                                        <Card.Body className="timeslot">
                                         {" "}
                                         <time
                                             datetime="17:00"
@@ -628,19 +705,21 @@ export default function ScheduleHQ() {
                                         >
                                             05:45 pm
                                         </time>
-                                        </p>
-                                    </div>
+                                        </Card.Body>
+                                        
+                                    </Card>
                             </td>
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="tue"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="ninjas" className="zks-inner-event-content">
                                         {" "}
-                                        <h5 className="event-title">
+                                        <Card.Header className="event-title">
                                             Mini Ninjas
-                                        </h5>
-                                        <p className="timeslot">
+                                        </Card.Header>
+                                        <Card.Body className="timeslot">
                                         {" "}
                                         <time
                                             datetime="17:00"
@@ -658,19 +737,21 @@ export default function ScheduleHQ() {
                                         >
                                             05:45 pm
                                         </time>
-                                        </p>
-                                    </div>
+                                        </Card.Body>
+                                        
+                                    </Card>
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="wed"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="ninjas" className="zks-inner-event-content">
                                         {" "}
-                                        <h5 className="event-title">
+                                        <Card.Header className="event-title">
                                             Mini Ninjas
-                                        </h5>
-                                        <p className="timeslot">
+                                        </Card.Header>
+                                        <Card.Body className="timeslot">
                                         {" "}
                                         <time
                                             datetime="17:00"
@@ -688,8 +769,9 @@ export default function ScheduleHQ() {
                                         >
                                             05:45 pm
                                         </time>
-                                        </p>
-                                    </div>
+                                        </Card.Body>
+                                        
+                                    </Card>
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="thu"
@@ -699,13 +781,14 @@ export default function ScheduleHQ() {
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="fri"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="ninjas" className="zks-inner-event-content">
                                         {" "}
-                                        <h5 className="event-title">
+                                        <Card.Header className="event-title">
                                             Mini Ninjas
-                                        </h5>
-                                        <p className="timeslot">
+                                        </Card.Header>
+                                        <Card.Body className="timeslot">
                                         {" "}
                                         <time
                                             datetime="17:00"
@@ -723,8 +806,9 @@ export default function ScheduleHQ() {
                                         >
                                             05:45 pm
                                         </time>
-                                        </p>
-                                    </div>
+                                        </Card.Body>
+                                        
+                                    </Card>
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sat"
@@ -742,14 +826,14 @@ export default function ScheduleHQ() {
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="mon"
                             colspan="1"
-                            data-row_height="45">                       
-                        
-                            <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">              
+                            <Card id="juniors" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
+                                <Card.Header className="event-title">
                                     Juniors MA
-                                </h5>
-                                <p className="timeslot">
+                                </Card.Header>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="18:00"
@@ -767,19 +851,21 @@ export default function ScheduleHQ() {
                                 >
                                     06:45 pm
                                 </time>
-                                </p>
-                            </div>                            
+                                </Card.Body>
+                                
+                            </Card>                            
                         </td>
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="tue"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="juniors" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
+                                <Card.Header className="event-title">
                                     Juniors MA
-                                </h5>
-                                <p className="timeslot">
+                                </Card.Header>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="18:00"
@@ -797,19 +883,21 @@ export default function ScheduleHQ() {
                                 >
                                     06:45 pm
                                 </time>
-                                </p>
-                            </div>          
+                                </Card.Body>
+                                
+                            </Card>          
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="wed"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="juniors" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
+                                <Card.Header className="event-title">
                                     Juniors MA
-                                </h5>
-                                <p className="timeslot">
+                                </Card.Header>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="18:00"
@@ -827,24 +915,28 @@ export default function ScheduleHQ() {
                                 >
                                     06:45 pm
                                 </time>
-                                </p>
-                            </div>             
+                                </Card.Body>
+                                
+                            </Card>             
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="thu"
                             colspan="1"
-                            data-row_height="45">
+                            data-row_height="45"
+                            >
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="fri"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container"
+                            >
+                                <Card id="juniors" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
+                                <Card.Header className="event-title">
                                     Juniors MA
-                                </h5>
-                                <p className="timeslot">
+                                </Card.Header>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="18:00"
@@ -862,8 +954,9 @@ export default function ScheduleHQ() {
                                 >
                                     06:45 pm
                                 </time>
-                                </p>
-                            </div>                
+                                </Card.Body>
+                                
+                            </Card>                
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sat"
@@ -881,13 +974,14 @@ export default function ScheduleHQ() {
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="mon"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="teens" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
+                                <Card.Header className="event-title">
                                     Teens MA
-                                </h5>
-                                <p className="timeslot">
+                                </Card.Header>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="19:00"
@@ -905,19 +999,21 @@ export default function ScheduleHQ() {
                                 >
                                     07:45 pm
                                 </time>
-                                </p>
-                            </div>        
+                                </Card.Body>
+                                
+                            </Card>        
                         </td>
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="tue"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="teens" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
+                                <Card.Header className="event-title">
                                     Teens MA
-                                </h5>
-                                <p className="timeslot">
+                                </Card.Header>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="19:00"
@@ -935,19 +1031,21 @@ export default function ScheduleHQ() {
                                 >
                                     07:45 pm
                                 </time>
-                                </p>
-                            </div>        
+                                </Card.Body>
+                                
+                            </Card>        
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="wed"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="teens" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
+                                <Card.Header className="event-title">
                                     Teens MA
-                                </h5>
-                                <p className="timeslot">
+                                </Card.Header>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="19:00"
@@ -965,19 +1063,24 @@ export default function ScheduleHQ() {
                                 >
                                     07:45 pm
                                 </time>
-                                </p>
-                            </div>        
+                                </Card.Body>
+                                
+                            </Card>        
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="thu"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="bbelts-teens" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
-                                    Teens MA
-                                </h5>
-                                <p className="timeslot">
+                                <Card.Header className="event-title">
+                                    Black Belts
+                                </Card.Header>
+                                <Card.Subtitle className="class-card-subtitle">
+                                    invite only
+                                </Card.Subtitle>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="19:00"
@@ -995,13 +1098,39 @@ export default function ScheduleHQ() {
                                 >
                                     07:45 pm
                                 </time>
-                                </p>
-                            </div>        
+                                </Card.Body>
+                                
+                            </Card>        
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="fri"
                             colspan="1"
                             data-row_height="45">
+                                <Card id="teens" className="zks-inner-event-content">
+                                {" "}
+                                <Card.Header className="event-title">
+                                    Teen MA
+                                </Card.Header>                  
+                                <Card.Body className="timeslot">
+                                {" "}
+                                <time
+                                    datetime="19:00"
+                                    className="timeslot-start"
+                                >
+                                    07:00 pm
+                                </time>{" "}
+                                <span className="timeslot-delimiter">
+                                    {" "}
+                                    -{" "}
+                                </span>{" "}
+                                <time
+                                    datetime="19:45"
+                                    className="timeslot-end"
+                                >
+                                    07:45 pm
+                                </time>
+                                </Card.Body>
+                            </Card>
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sat"
@@ -1014,7 +1143,7 @@ export default function ScheduleHQ() {
                             data-row_height="45">
                         </td>                
                     </tr>
-                    <tr className="zks-shortcode-row-20" data-index="20">
+                    {/* <tr className="zks-shortcode-row-20" data-index="20">
                         <td className="zks-shortcode-hours">08:00 pm</td>
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="mon"
@@ -1127,10 +1256,38 @@ export default function ScheduleHQ() {
                             colspan="1"
                             data-row_height="45">
                         </td>                
-                    </tr>
-                   
-                </tbody>      
-                </table>    
+                    </tr> */}            
+                
+                </tbody> 
+                    <tfoot id="schedule_base_head">
+                        <tr className="zks-shortcode-row zks-shortcode-row-th">
+                            {columnData.map((data, name) => { 
+                            if (!data.column_id) 
+                                return  <th><FontAwesomeIcon icon={faCalendarDays} style={{color: "#ffffff"}} />
+                                </th>                  
+                                return (
+                                    <th key={name}>{data.name}</th>                            
+                                )
+                            })}
+                        </tr>
+                    </tfoot>    
+                </table> 
+            </div> 
+            <section id="location">
+                <Card id="zksma_hq-map" className="location-card">
+                    <Card.Header className="location-card-header">Aylesbury HQ
+                            </Card.Header>
+                        <Card.Body>
+                            <Card.Subtitle>Term Time Only</Card.Subtitle>
+                                <hr />                        
+                                    <iframe title="Aylesbury HQ location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d616.5706715664278!2d-0.809643570722919!3d51.81926629873045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876f7a6471bebad%3A0xbfaf2e31469c0d08!2s111%20Cambridge%20St%2C%20Aylesbury%20HP20%201BT!5e0!3m2!1sen!2suk!4v1629312733977!5m2!1sen!2suk"  maxwidth="400" maxheight="300"  allowFullScreen>
+                                    </iframe>                       
+                        </Card.Body>
+                            <Card.Footer>
+                                <address className="card-text">111 - 113 Cambridge Street, Aylesbury,                     HP20 1BT</address>
+                            </Card.Footer>
+                </Card>
+            </section>
             </>
     )
 }

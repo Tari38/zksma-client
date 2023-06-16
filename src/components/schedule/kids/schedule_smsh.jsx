@@ -1,15 +1,34 @@
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendarDays, faLeftRight } from '@fortawesome/free-solid-svg-icons';
+import { columnData } from "../data/data-source.js";
+import { Card } from 'react-bootstrap';
+import "../css/";
 
 export default function ScheduleSMSH() {
+    
     return (
-        <div>
+        <>
+        <h6 id="swipe-text">Swipe to View</h6>
+        <FontAwesomeIcon id="icon-showhide" icon={faLeftRight} style={{color: "#cb1010", fontSize: "30px",}} />      
+        <div className="scrollbar">
             <table className="zks-shortcode-table  zks-theme-mode"
                    id="smsh"                          
                    data-hide_empty_row="1"
             >
-                
-                <tbody data-venue_schedule="scheduleSMSH">
-                    <tr className="zks-shortcode-row-8" data-index="8">
+                <thead id="schedule_base_head"  >
+					<tr className="zks-shortcode-row zks-shortcode-row-th">
+				{columnData.map((data, name) => { 
+					if (!data.column_id) 
+					return  <th><FontAwesomeIcon icon={faCalendarDays} style={{color: "#ffffff"}} />
+							</th>                  
+							return (
+								<th key={name}>{data.name}</th>                                 
+								)
+							})}
+							</tr>				
+				</thead> 
+                <tbody>
+                    {/* <tr className="zks-shortcode-row-8" data-index="8">
                         <td className="zks-shortcode-hours">08:00 am</td>
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="mon"
@@ -312,19 +331,20 @@ export default function ScheduleSMSH() {
                             colspan="1"
                             data-row_height="45">
                         </td>                
-                    </tr>
+                    </tr> */}
                     <tr className="zks-shortcode-row-16" data-index="16">
                         <td className="zks-shortcode-hours">04:00 pm</td>
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="mon"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="dragons" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
+                                <Card.Header className="event-title">
                                     Little Dragons
-                                </h5>
-                                <p className="timeslot">
+                                </Card.Header>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="16:15"
@@ -342,8 +362,8 @@ export default function ScheduleSMSH() {
                                 >
                                     04:45 pm
                                 </time>
-                                </p>
-                            </div>        
+                                </Card.Body>
+                            </Card>        
                         </td>
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="tue"
@@ -381,13 +401,14 @@ export default function ScheduleSMSH() {
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="mon"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="ninjas" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
+                                <Card.Header className="event-title">
                                     Mini Ninjas
-                                </h5>
-                                <p className="timeslot">
+                                </Card.Header>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="17:00"
@@ -405,8 +426,8 @@ export default function ScheduleSMSH() {
                                 >
                                     05:45 pm
                                 </time>
-                                </p>
-                            </div>        
+                                </Card.Body>
+                            </Card>        
                         </td>
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="tue"
@@ -444,14 +465,15 @@ export default function ScheduleSMSH() {
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="mon"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="juniors" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
+                                <Card.Header className="event-title">
                                     Junior MA
-                                </h5>
-                                <p>8 - 9 year olds</p>
-                                <p className="timeslot">
+                                </Card.Header>
+                                <Card.Body>7 - 9 year olds</Card.Body>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="18:00"
@@ -469,8 +491,8 @@ export default function ScheduleSMSH() {
                                 >
                                     06:45 pm
                                 </time>
-                                </p>
-                            </div>        
+                                </Card.Body>
+                            </Card>        
                         </td>
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="tue"
@@ -508,14 +530,15 @@ export default function ScheduleSMSH() {
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="mon"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                {/* <Card id="juniors" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
+                                <Card.Header className="event-title">
                                     Junior MA
-                                </h5>
-                                <p>10 - 11 year olds</p>
-                                <p className="timeslot">
+                                </Card.Header>
+                                <Card.Body>10 - 11 year olds</Card.Body>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="19:00"
@@ -533,8 +556,8 @@ export default function ScheduleSMSH() {
                                 >
                                     07:45 pm
                                 </time>
-                                </p>
-                            </div>        
+                                </Card.Body>
+                            </Card>         */}
                         </td>
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="tue"
@@ -567,7 +590,7 @@ export default function ScheduleSMSH() {
                             data-row_height="45">
                         </td>                
                     </tr>
-                    <tr className="zks-shortcode-row-20" data-index="20">
+                    {/* <tr className="zks-shortcode-row-20" data-index="20">
                         <td className="zks-shortcode-hours">08:00 pm</td>
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="mon"
@@ -680,9 +703,37 @@ export default function ScheduleSMSH() {
                             colspan="1"
                             data-row_height="45">
                         </td>                
-                    </tr>                
+                    </tr>                 */}
                 </tbody>
+                <tfoot id="schedule_base_head">
+                        <tr className="zks-shortcode-row zks-shortcode-row-th">
+                            {columnData.map((data, name) => { 
+                            if (!data.column_id) 
+                                return  <th><FontAwesomeIcon icon={faCalendarDays} style={{color: "#ffffff"}} />
+                                </th>                  
+                                return (
+                                    <th key={name}>{data.name}</th>                            
+                                )
+                            })}
+                        </tr>
+                    </tfoot>
             </table>
-        </div>
+            </div>
+            <section id="location">
+            <Card id="smsh-map" className="location-card">
+                    <Card.Header className="location-card-header">St Mary's School, Haddenham</Card.Header>
+                    <Card.Body>
+                    <Card.Subtitle>Term Time Only</Card.Subtitle>
+                    
+                    <hr />
+                    <iframe title="St Mary's School location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.244825948348!2d-0.9277880487565071!3d51.76513129954734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876f189a4b4c17d%3A0xf0b1b9b80ffc41df!2sHaddenham+St+Marys+C+E+School!5e0!3m2!1sen!2suk!4v1507648565105" maxWidth="400" maxHeight="300"  allowFullScreen></iframe>
+                    </Card.Body>
+                    <Card.Footer>
+                        <address className="card-text">Aston Road, Haddenham, HP17 8AF
+                        </address>
+                    </Card.Footer>
+                </Card>
+                </section>
+        </>
     )
 }

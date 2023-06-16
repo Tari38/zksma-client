@@ -6,7 +6,7 @@
 }
 #about:hover, #benefits:hover {
     transform: none;
-    border: 2px solid red;
+    border: 1px solid red;
     box-shadow: none;
 }
 
@@ -27,3 +27,6 @@
     background-color: #000;
 }
 
+.about-card {
+    max-width: 500px;
+}

@@ -8,4 +8,5 @@ export { default as Groups } from "./Groups";
 export { default as Contact } from "./Contact";
 export { default as NotFound } from "./NotFound";
 export { default as GradingExams } from "./GradingExams";
-export { default as Timetable } from "./Timetable";
+export { default as HavocGrappling } from "./HavocGrappling";
+export { default as ScorpionMuayThai } from "./ScorpionMuayThai";

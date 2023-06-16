@@ -1,0 +1,328 @@
+@import url("../../../styles/theme.css");
+
+.zks-navigation-select {
+  margin-bottom: 20px;
+  padding: 0 15px;
+  width: auto;
+  height: 40px;
+  border: 4px solid;
+  border-color: var(--dark-red);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.zks-shortcode-table {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+}
+
+.icon-th {
+  background-color: #d8d8d800;
+  color: #222;
+  margin: auto;
+  border: #fff 1px solid;
+  text-align: center;
+}
+
+table {
+  empty-cells: show;
+  border-collapse: separate;
+  border-spacing: 0;  
+}
+
+td, .zks-shortcode-event.zks-event-vertical-default {
+  background-color: #e4e4e4;
+  border: 1px solid #f3f0f0;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.zks-shortcode-hours, .zks-shortcode-row-th {
+  height: auto;
+  width: auto;
+  padding: 4px 16px;
+  background-color: #f30707d0; 
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-shadow: 1px 1px #000;
+  border: #fff 1px solid;
+}
+
+
+.zks-shortcode-table thead .zks-shortcode-row-th tr.zks-shortcode-row th:first-child::before, .xs-dark-time-table .zks-shortcode-table thead tr.zks-shortcode-row th:first-child::before {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.zks-shortcode-table thead tr.zks-shortcode-row-th th:first-child {
+  background: #000;
+  color: #fff;
+}
+
+.zks-shortcode-wrapper .zks-shortcode-table tr.zks-shortcode-row th {
+  background-color: red;
+  border: 1px solid #fff;
+  text-align: center;
+  text-shadow: 1px 1px #000;
+  color: #fff;
+  padding: 0.25rem 1rem;
+  overflow-wrap: normal;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  
+}
+
+.zks-shortcode-table thead tr.zks-shortcode-row th {
+  text-transform: uppercase;
+}
+
+.zks-shortcode-table tbody tr .zks-shortcode-event {
+  /* border: 0; */
+  border-width: 1px;
+  border-style: groove;
+  /* background: 0 0; */
+  border-color: #ffffff;
+  background-color: #f4f4f4;
+}
+
+.zks-shortcode-table tbody tr .zks-shortcode-event>div[data-type=event] {
+  outline: 0;
+  transition: all .4s ease;
+}
+
+.zks-shortcode-wrapper .zks-shortcode-table tbody .zks-event-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.zks-inner-event-content {    
+  transition: 0.5s ease;
+}
+.zks-inner-event-content .event-title {
+  font-weight: 800;
+  text-transform: uppercase;  
+  line-height: 1;
+  color:#fff;  
+  /* top: 5px; */
+  letter-spacing: 1.4px;
+}
+
+.zks-inner-event-content:hover {
+  box-shadow: 4px 4px 10px #222;
+  transform: scale(1.1);
+  transition: 0.5s ease;
+  z-index: 4;
+}
+  
+.zks-inner-event-content .card-body {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+
+  #dragons {
+    background: var(--dragons);  
+    border: none;
+    border-radius: 5px;   
+    color: #000;
+  }
+  #dragons .event-title {
+    background-color: #044d04;
+    padding: 10px 5px;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  #ninjas {
+    background: var(--ninjas);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+  }
+  #ninjas .event-title {
+    background-color: #5e0707;
+    padding: 10px 5px;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  #juniors {
+    background: var(--juniors); 
+    border: none;
+    border-radius: 5px;
+    color: #fff;   
+  }
+  #juniors .event-title {
+    background-color: #4b0808;
+    padding: 10px 5px;
+    border-radius: 5px 5px 0 0;
+  }
+
+  #card-junior, #card-junior .class-card-header {
+    color: #fff;
+  }
+  
+  #teens {
+    background: var(--teens);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+  }
+  #teens .event-title {
+    background-color: #66300c;
+    padding: 10px 5px;
+    border-radius: 5px 5px 0 0;
+  }
+  #teens-elite {
+    background: var(--teens-elite);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+  }
+  #teens-elite .event-title {
+    background-color: #66300c;
+    padding: 10px 5px;
+    border-radius: 5px 5px 0 0;
+  }
+
+  #card-teens, #card-teens .class-card-header {
+    color: #fff;
+  }
+
+  .classes-card-group .class-card-header {
+    color: #000;
+  }
+
+  .class-card-subtitle {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  #sen {
+    background: var(--sen);
+    border: none;
+    border-radius: 5px;    
+    color: #000;
+  }
+  #sen .event-title {
+    background-color: #918701;
+    padding: 10px 5px;
+    border-radius: 5px 5px 0 0;
+  }
+
+  #card-sen > .class-card-header {
+    color: #000;
+  }
+
+  #homeed {
+    background: var(--homeed);  
+    border: none;
+    border-radius: 5px;  
+  }
+  #homeed .event-title {
+    background-color: #0c3861;
+    padding: 10px 5px;
+    border-radius: 5px 5px 0 0;
+  }
+
+  #schools {
+    background: var(--schools);  
+    border: none;
+    border-radius: 5px;  
+  }
+  #schools .event-title {
+    background-color: #490707;
+    padding: 10px 5px;
+    border-radius: 5px 5px 0 0;
+  }
+
+  #card-container {
+    background-color: #fff;
+  }
+
+  #nin-jun-class {
+    background: var(--nin-jun-class-gradient);
+    color: #fff;
+  }
+  #nin-jun-class .event-title {
+    background-color: #4b0808;
+  }
+
+  #bbelts-teens {
+    background: var(--black);
+    color: #fff;
+  }
+
+  #bjj-teens {
+    background: var(--blue);
+    color: #fff;
+  }
+  #bjj-teens .event-title {
+    background-color: #0c3861;
+  }
+
+.location-card {
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  /* border: 1px solid #000; */
+  transition: .5s ease;
+}
+
+.location-card-header {
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+.location-card:hover {
+  transition: .5s ease;
+  box-shadow: 4px 4px 6px rgb(71, 59, 59);
+}
+
+#icon-showhide, #swipe-text {
+  visibility: hidden;
+}
+
+br.table-break {
+  height: 30px;
+  width: auto;
+  background-color: #000;
+}
+
+@media only screen and (max-width: 760px) {
+  iframe {
+      max-width: 400px;
+      flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 865px) {  
+  #icon-showhide, #swipe-text {
+    visibility: visible;
+    color: red;
+    text-shadow: none;
+  }
+  div.scrollbar { 
+    background-color: inherit;
+    overflow: auto;
+    white-space: nowrap;
+    color: #000;
+  }
+  .zks-shortcode-table {
+    max-width: 100%;
+    /* padding: 20px 0; */
+  }  
+}

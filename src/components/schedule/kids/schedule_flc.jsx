@@ -1,13 +1,34 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendarDays, faLeftRight } from '@fortawesome/free-solid-svg-icons';
+import { columnData } from "../data/data-source.js";
+import { Card } from 'react-bootstrap';
+import "../css/";
+
 export default function ScheduleFLC() {
+    
     return (
-        <div>
+        <>
+        <h6 id="swipe-text">Swipe to View</h6>
+        <FontAwesomeIcon id="icon-showhide" icon={faLeftRight} style={{color: "#cb1010", fontSize: "30px",}} />      
+        <div className="scrollbar">
             <table className="zks-shortcode-table  zks-theme-mode"
                    id="flc"                          
                    data-hide_empty_row="1"
             >
-                
+                <thead id="schedule_base_head"  >
+					<tr className="zks-shortcode-row zks-shortcode-row-th">
+				{columnData.map((data, name) => { 
+					if (!data.column_id) 
+					return  <th><FontAwesomeIcon icon={faCalendarDays} style={{color: "#ffffff"}} />
+							</th>                  
+							return (
+								<th key={name}>{data.name}</th>                                 
+								)
+							})}
+							</tr>
+				</thead> 
                 <tbody data-venue_schedule="scheduleFLC">                
-                    <tr className="zks-shortcode-row-8" data-index="8">
+                    {/* <tr className="zks-shortcode-row-8" data-index="8">
                         <td className="zks-shortcode-hours">08:00 am</td>
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="mon"
@@ -82,7 +103,7 @@ export default function ScheduleFLC() {
                             colspan="1"
                             data-row_height="45">
                         </td>                
-                    </tr>
+                    </tr> */}
                     <tr className="zks-shortcode-row-10" data-index="10">
                         <td className="zks-shortcode-hours">10:00 am</td>
                         <td className="zks-shortcode-event zks-event-vertical-default"
@@ -113,13 +134,14 @@ export default function ScheduleFLC() {
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sat"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="dragons" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
+                                <Card.Header className="event-title">
                                     Little Dragons
-                                </h5>
-                                <p className="timeslot">
+                                </Card.Header>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="10:00"
@@ -135,10 +157,28 @@ export default function ScheduleFLC() {
                                     datetime="11:00"
                                     className="timeslot-end"
                                 >
+                                    10:30 am
+                                </time>
+                                <hr />
+                                <time
+                                    datetime="10:00"
+                                    className="timeslot-start"
+                                >
+                                    10:30 am
+                                </time>{" "}
+                                <span className="timeslot-delimiter">
+                                    {" "}
+                                    -{" "}
+                                </span>{" "}
+                                <time
+                                    datetime="11:00"
+                                    className="timeslot-end"
+                                >
                                     11:00 am
                                 </time>
-                                </p>
-                            </div>        
+                                </Card.Body>
+                                
+                            </Card> 
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sun"
@@ -176,32 +216,34 @@ export default function ScheduleFLC() {
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sat"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
-                                {" "}
-                                <h5 className="event-title">
-                                    Mini Ninjas
-                                </h5>
-                                <p className="timeslot">
-                                {" "}
-                                <time
-                                    datetime="11:00"
-                                    className="timeslot-start"
-                                >
-                                    11:00 am
-                                </time>{" "}
-                                <span className="timeslot-delimiter">
-                                    {" "}
-                                    -{" "}
-                                </span>{" "}
-                                <time
-                                    datetime="11:45"
-                                    className="timeslot-end"
-                                >
-                                    11:45 am
-                                </time>
-                                </p>
-                            </div>        
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="ninjas" className="zks-inner-event-content">
+                                        {" "}
+                                        <Card.Header className="event-title">
+                                            Mini Ninjas
+                                        </Card.Header>
+                                        <Card.Body className="timeslot">
+                                        {" "}
+                                        <time
+                                            datetime="11:00"
+                                            className="timeslot-start"
+                                        >
+                                            11:00 am
+                                        </time>{" "}
+                                        <span className="timeslot-delimiter">
+                                            {" "}
+                                            -{" "}
+                                        </span>{" "}
+                                        <time
+                                            datetime="11:45"
+                                            className="timeslot-end"
+                                        >
+                                            11:45 am
+                                        </time>
+                                        </Card.Body>
+                                        
+                                    </Card>
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sun"
@@ -239,13 +281,14 @@ export default function ScheduleFLC() {
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sat"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="juniors" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
+                                <Card.Header className="event-title">
                                     Junior MA
-                                </h5>
-                                <p className="timeslot">
+                                </Card.Header>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="12:00"
@@ -263,8 +306,8 @@ export default function ScheduleFLC() {
                                 >
                                     12:45 pm
                                 </time>
-                                </p>
-                            </div>        
+                                </Card.Body>
+                            </Card>        
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sun"
@@ -272,7 +315,7 @@ export default function ScheduleFLC() {
                             data-row_height="45">
                         </td>                
                     </tr>
-                    <tr className="zks-shortcode-row-13" data-index="13">
+                    {/* <tr className="zks-shortcode-row-13" data-index="13">
                         <td className="zks-shortcode-hours">01:00 pm</td>
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="mon"
@@ -385,7 +428,8 @@ export default function ScheduleFLC() {
                             colspan="1"
                             data-row_height="45">
                         </td>                
-                    </tr>
+                    </tr> */}
+                    <br />
                     <tr className="zks-shortcode-row-16" data-index="16">
                         <td className="zks-shortcode-hours">04:00 pm</td>
                         <td className="zks-shortcode-event zks-event-vertical-default"
@@ -406,13 +450,14 @@ export default function ScheduleFLC() {
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="thu"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="dragons" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
+                                <Card.Header className="event-title">
                                     Little Dragons
-                                </h5>
-                                <p className="timeslot">
+                                </Card.Header>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="16:15"
@@ -430,19 +475,20 @@ export default function ScheduleFLC() {
                                 >
                                     04:45 pm
                                 </time>
-                                </p>
-                            </div>        
+                                </Card.Body>
+                            </Card>        
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="fri"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="ninjas" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
+                                <Card.Header className="event-title">
                                     Mini Ninjas
-                                </h5>
-                                <p className="timeslot">
+                                </Card.Header>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="16:15"
@@ -460,8 +506,8 @@ export default function ScheduleFLC() {
                                 >
                                     05:00 pm
                                 </time>
-                                </p>
-                            </div>        
+                                </Card.Body>
+                            </Card>        
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sat"
@@ -494,13 +540,14 @@ export default function ScheduleFLC() {
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="thu"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="ninjas" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
+                                <Card.Header className="event-title">
                                     Mini Ninjas
-                                </h5>
-                                <p className="timeslot">
+                                </Card.Header>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="17:00"
@@ -518,19 +565,20 @@ export default function ScheduleFLC() {
                                 >
                                     05:45 pm
                                 </time>
-                                </p>
-                            </div>        
+                                </Card.Body>
+                            </Card>        
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="fri"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="juniors" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
+                                <Card.Header className="event-title">
                                     Junior MA
-                                </h5>
-                                <p className="timeslot">
+                                </Card.Header>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="17:15"
@@ -548,8 +596,8 @@ export default function ScheduleFLC() {
                                 >
                                     06:00 pm
                                 </time>
-                                </p>
-                            </div>        
+                                </Card.Body>
+                            </Card>        
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="sat"
@@ -582,13 +630,14 @@ export default function ScheduleFLC() {
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="thu"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="juniors" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
+                                <Card.Header className="event-title">
                                     Junior MA
-                                </h5>
-                                <p className="timeslot">
+                                </Card.Header>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="18:00"
@@ -606,8 +655,8 @@ export default function ScheduleFLC() {
                                 >
                                     06:45 pm
                                 </time>
-                                </p>
-                            </div>        
+                                </Card.Body>
+                            </Card>        
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="fri"
@@ -645,13 +694,14 @@ export default function ScheduleFLC() {
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="thu"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="teens" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
+                                <Card.Header className="event-title">
                                     Teens MA
-                                </h5>
-                                <p className="timeslot">
+                                </Card.Header>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="19:00"
@@ -669,8 +719,8 @@ export default function ScheduleFLC() {
                                 >
                                     07:45 pm
                                 </time>
-                                </p>
-                            </div>        
+                                </Card.Body>
+                            </Card>        
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="fri"
@@ -688,7 +738,7 @@ export default function ScheduleFLC() {
                             data-row_height="45">
                         </td>                
                     </tr>
-                    <tr className="zks-shortcode-row-20" data-index="20">
+                    {/* <tr className="zks-shortcode-row-20" data-index="20">
                         <td className="zks-shortcode-hours">08:00 pm</td>
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="mon"
@@ -801,10 +851,37 @@ export default function ScheduleFLC() {
                             colspan="1"
                             data-row_height="45">
                         </td>                
-                    </tr>
+                    </tr> */}
                 </tbody>
-                
+                <tfoot id="schedule_base_head">
+                        <tr className="zks-shortcode-row zks-shortcode-row-th">
+                            {columnData.map((data, name) => { 
+                            if (!data.column_id) 
+                                return  <th><FontAwesomeIcon icon={faCalendarDays} style={{color: "#ffffff"}} />
+                                </th>                  
+                                return (
+                                    <th key={name}>{data.name}</th>                            
+                                )
+                            })}
+                        </tr>
+                    </tfoot>
             </table>
-        </div>
+            </div>
+            <section id="location">
+            <Card id="flc-map" className="location-card">
+                <Card.Header className="location-card-header">Fairford Leys Community Center</Card.Header>
+                <Card.Body>
+                    <Card.Subtitle>Term Time Only</Card.Subtitle>
+                        <hr />
+                        <iframe title="Fairford Leys location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2466.404328806237!2d-0.8419580487547518!3d51.81704399573713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876f722d436908f%3A0x5b6d0c2202adbf42!2sColdharbour+Parish+Council!5e0!3m2!1sen!2suk!4v1507649043860" maxWidth="400" maxHeight="300"  allowFullScreen></iframe>
+                        </Card.Body>
+                        <Card.Footer>
+                            <address className="card-text">Hampden Square, Fairford Leys, HP19 7HT
+                            </address>
+                        </Card.Footer>
+                </Card>
+            </section>
+        
+        </>
     )
 }

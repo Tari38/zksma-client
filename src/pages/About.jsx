@@ -1,5 +1,8 @@
 import { Col, Row } from "react-bootstrap";
 import { AboutCard1, AboutCard2, AboutCard3, AboutCard4 } from "../components/cards/AboutCards";
+import HavocGrappling from "./HavocGrappling";
+import ScorpionMuayThai from "./ScorpionMuayThai";
+import LocationMaps from "../components/schedule/maps/LocationMaps";
 import "./css/About.css";
 
 export default function About() {
@@ -8,7 +11,7 @@ export default function About() {
         <div id="about-hero">
             <h1>About ZKS Martial Arts</h1>
         </div>
-            <Row class="about-row">
+            <Row className="about-row">
                 <Col className="card-group-col">
                     <AboutCard1 />
                 </Col>
@@ -16,7 +19,7 @@ export default function About() {
                     <AboutCard2 />
                 </Col>
             </Row>
-            <Row class="about-row">
+            <Row className="about-row">
                 <Col className="card-group-col">
                     <AboutCard3 />
                 </Col>
@@ -24,6 +27,19 @@ export default function About() {
                     <AboutCard4 />
                 </Col>
             </Row>
+            <section id="bjj">
+                <Row>
+                    <HavocGrappling />
+                </Row>
+            </section>
+            <section id="muay-thai">
+                <Row>    
+                   <ScorpionMuayThai />
+                </Row>                  
+            </section>
+            <section id="location-maps">
+                <LocationMaps />
+            </section>
         </>
     )
 }

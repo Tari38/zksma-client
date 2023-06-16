@@ -1,18 +1,17 @@
 #about-hero {
-    background-image: url("../../assets/logos/newlogo.png");
-    background-size: contain;
-    background-repeat: round;
-    background-position: center;
-    height: 200px;
+    background:  var(--aluminium-dark-red-gradient);    
+    height: 150px;
     justify-content: center;
     align-items: center;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 #about-hero h1 {
     background-color: #00000075;
-    padding-top: 20px;
-    height: 300px;
+    /* padding-top: 20px; */
+    height: 150px;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -24,12 +23,70 @@
 .about-row {
     display: flex;
     width: 100%;    
-    background-color: beige;
+    background-color: rgb(173, 5, 5);
+    margin: 0;
+    padding: 0;
 }
 
 .card-group-col {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: auto; */
+    margin: auto;
+}
+
+section #havoc, section #scorpion {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+#about-havoc, #about-scorpion {
+    padding: 10px 20px;
+}
+
+#about-havoc ul, #about-scorpion ul {
+    list-style-type: none;
+}
+
+#havoc-video-container {
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;    
+    border: 1px solid red;
+    margin: 0;
+    padding: 0;
+}
+
+#video {
+    margin-top: -900px;
+    margin-left: -400px;
+}
+
+#scorpion-video {
+    margin-top: -700px;
+}
+
+@media only screen and (max-width: 800px) {
+    #video {
+        margin-left: -500px;
+        overflow-x: visible;
+    }
+    #about-havoc ul, #about-scorpion ul {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #video, #scorpion-video {
+        width: 500px;
+        height: auto;
+    }
+}
+
+#location-maps {
+    background: var(--red-darkred-gradient);
+    color: #fff;
 }

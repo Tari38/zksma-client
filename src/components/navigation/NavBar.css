@@ -79,3 +79,14 @@
 .dropdown {
     padding: 0;
 }
+
+.offcanvas-menu {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.offcanvas-header, #nav-dropdown-menu {
+    text-align: center;
+}
+

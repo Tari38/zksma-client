@@ -1,14 +1,34 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendarDays, faLeftRight } from '@fortawesome/free-solid-svg-icons';
+import { columnData } from "../data/data-source.js";
+import { Card } from 'react-bootstrap';
+import "../css/";
 
 export default function ScheduleWCC() {
+    
     return (
-        <div>
+        <>
+        <h6 id="swipe-text">Swipe to View</h6>
+        <FontAwesomeIcon id="icon-showhide" icon={faLeftRight} style={{color: "#cb1010", fontSize: "30px",}} />      
+        <div className="scrollbar">
             <table className="zks-shortcode-table  zks-theme-mode"
                    id="wcc"                          
                    data-hide_empty_row="1"
             >
-                
-                <tbody data-venue_schedule="scheduleWCC">                
-                    <tr className="zks-shortcode-row-8" data-index="8">
+                <thead id="schedule_base_head"  >
+					<tr className="zks-shortcode-row zks-shortcode-row-th">
+				{columnData.map((data, name) => { 
+					if (!data.column_id) 
+					return  <th><FontAwesomeIcon icon={faCalendarDays} style={{color: "#ffffff"}} />
+							</th>                  
+							return (
+								<th key={name}>{data.name}</th>                                 
+								)
+							})}
+							</tr>				
+				</thead> 
+                <tbody>                
+                    {/* <tr className="zks-shortcode-row-8" data-index="8">
                         <td className="zks-shortcode-hours">08:00 am</td>
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="mon"
@@ -387,7 +407,7 @@ export default function ScheduleWCC() {
                             colspan="1"
                             data-row_height="45">
                         </td>                
-                    </tr>
+                    </tr> */}
                     <tr className="zks-shortcode-row-18" data-index="18">
                         <td className="zks-shortcode-hours">06:00 pm</td>
                         <td className="zks-shortcode-event zks-event-vertical-default"
@@ -403,13 +423,14 @@ export default function ScheduleWCC() {
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="wed"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="nin-jun-class" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
+                                <Card.Header className="event-title">
                                     Mini Ninjas & Juniors MA
-                                </h5>
-                                <p className="timeslot">
+                                </Card.Header>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="18:00"
@@ -427,8 +448,8 @@ export default function ScheduleWCC() {
                                 >
                                     06:45 pm
                                 </time>
-                                </p>
-                            </div>        
+                                </Card.Body>
+                            </Card>        
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="thu"
@@ -466,13 +487,14 @@ export default function ScheduleWCC() {
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="wed"
                             colspan="1"
-                            data-row_height="45">
-                                <div className="zks-inner-event-content">
+                            data-row_height="45"
+                            id="card-container">
+                                <Card id="teens" className="zks-inner-event-content">
                                 {" "}
-                                <h5 className="event-title">
+                                <Card.Header className="event-title">
                                     Teens MA
-                                </h5>
-                                <p className="timeslot">
+                                </Card.Header>
+                                <Card.Body className="timeslot">
                                 {" "}
                                 <time
                                     datetime="19:00"
@@ -490,8 +512,8 @@ export default function ScheduleWCC() {
                                 >
                                     07:45 pm
                                 </time>
-                                </p>
-                            </div>        
+                                </Card.Body>
+                            </Card>        
                         </td>   
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="thu"
@@ -514,7 +536,7 @@ export default function ScheduleWCC() {
                             data-row_height="45">
                         </td>                
                     </tr>
-                    <tr className="zks-shortcode-row-20" data-index="20">
+                    {/* <tr className="zks-shortcode-row-20" data-index="20">
                         <td className="zks-shortcode-hours">08:00 pm</td>
                         <td className="zks-shortcode-event zks-event-vertical-default"
                             data-column-id="mon"
@@ -627,9 +649,38 @@ export default function ScheduleWCC() {
                             colspan="1"
                             data-row_height="45">
                         </td>                
-                    </tr>
-                </tbody>                
+                    </tr> */}
+                </tbody>  
+                <tfoot id="schedule_base_head">
+                        <tr className="zks-shortcode-row zks-shortcode-row-th">
+                            {columnData.map((data, name) => { 
+                            if (!data.column_id) 
+                                return  <th><FontAwesomeIcon icon={faCalendarDays} style={{color: "#ffffff"}} />
+                                </th>                  
+                                return (
+                                    <th key={name}>{data.name}</th>                            
+                                )
+                            })}
+                        </tr>
+                    </tfoot>              
             </table>
-        </div>
+            </div>
+            <section id="location">
+            <Card id="wcc-map" className="location-card">
+                    <Card.Header className="location-card-header">Wingrave Community Center</Card.Header>
+                    <Card.Body>
+                    <Card.Subtitle>Term Time Only</Card.Subtitle>
+                    
+                    <hr />
+                    <iframe title="Wingrave Community Center location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2463.885647275419!2d-0.7410060489673148!3d51.863044292359085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876579255683397%3A0x2fd2469f9c71ccac!2sWingrave+Community+Centre!5e0!3m2!1sen!2suk!4v1507720012964" maxWidth="400" maxHeight="300"  allowFullScreen></iframe>
+                    </Card.Body>
+                    <Card.Footer>
+                        <address className="card-text">Church Street, Wingrave, HP22 4PE
+                        </address>
+                    </Card.Footer>
+                </Card>            
+            </section>
+        
+        </>
     )
 }

@@ -31,9 +31,9 @@
 }
 
 @media only screen and (max-width: 450px) {
-    .header-contact-link {
+    /* .header-contact-link {
         font-size: 10px;
-    }
+    } */
     .contact-bar {
         margin: 5px auto;
         justify-content: center;

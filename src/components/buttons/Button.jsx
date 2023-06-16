@@ -45,7 +45,7 @@ export const AdultsClassesButton = () => {
 
 export const BucksVenuesButton = () => {
     return (
-        <Button className="bucks-btn" href="./kidsclasses#venues" >
+        <Button className="bucks-btn" href="./about#location-maps" >
             Buckinghamshire
         </Button>
     )
@@ -53,7 +53,7 @@ export const BucksVenuesButton = () => {
 
 export const HertsVenuesButton = () => {
     return (
-        <Button className="herts-btn" href="./kidsclasses#venues" >
+        <Button className="herts-btn" href="./about#location-maps" >
             Hertfordshire
         </Button>
     )

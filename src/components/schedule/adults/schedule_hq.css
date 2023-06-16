@@ -1,0 +1,27 @@
+#bjj {
+    background: var(--blue-dark-aluminium-gradient);
+    color: #fff;
+}
+#bjj .event-title {
+    background-color: #2b6ace;
+}
+
+#muay-thai {
+    background: var(--aluminium-dark-red-gradient);
+    color: #fff;
+}
+#muay-thai .event-title {
+    background-color: #ad2519;
+}
+
+/* .event-subtitle {
+    font-weight: bold;
+} */
+
+#taijitsu {
+    background: var(--aluminium-emerald-gradient);
+    color: #fff;
+}
+#taijitsu .event-title {
+    background-color: #1bc99f;   
+}

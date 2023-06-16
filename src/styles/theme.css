@@ -6,6 +6,7 @@
     --ninjas: #CC5757;
     --juniors: #A33030;
     --teens: #A35E30;
+    --teens-elite: #000;
     --sen: #fcf26a;
     --homeed: #9ecbf5;
     --schools: #e090f8;
@@ -24,11 +25,23 @@
     --blue: #3885ff;
     --aqua: #3ec6eb;
     --emerald: #1bc99f;
-  
+
+    --blue-dark-aluminium-gradient: linear-gradient(
+      153.07deg,
+      var(--dark-aluminium) -2.47%,
+      var(--blue) 102.78%
+    );
+
     --aluminium-dark-red-gradient: linear-gradient(
       153.07deg,
       var(--dark-aluminium) -2.47%,
       var(--dark-red) 102.78%
+    );
+
+    --aluminium-emerald-gradient: linear-gradient(
+      153.07deg,
+      var(--dark-aluminium) -2.47%,
+      var(--emerald) 102.78%
     );
     
     --yellow-mandarine-gradient: linear-gradient(
@@ -84,6 +97,13 @@
       var(--dark-red) -2.47%,
       var(--red) 102.78%
     );
+
+    --nin-jun-class-gradient: linear-gradient(
+      153.07deg,
+      var(--ninjas) -2.47%,
+      var(--juniors) 102.78%
+    );
+    
   
     --font-primary: "Merienda", cursive;
     --font-secondary: "Poppins", sans-serif;
