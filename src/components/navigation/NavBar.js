@@ -1,4 +1,4 @@
-import { Container, Offcanvas, Nav, Navbar, DropdownButton, Dropdown, NavItem } from "react-bootstrap";
+import { Container, Offcanvas, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import NavLogo from "../../assets/logos/newlogo.png";
 import "./NavBar.css";
@@ -21,7 +21,7 @@ export default function NavBar() {
                     <Offcanvas.Title className="offcanvas-header">ZKS Menu</Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                    <Nav className="me-auto nav-links nav">
+                    <Nav className="me-auto nav-links nav  flex-grow-1 pe-3">
                         
                         <NavLink exact className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="/">Home</NavLink>
 
@@ -29,19 +29,15 @@ export default function NavBar() {
 
                         <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="about">About</NavLink>
 
-                        <DropdownButton as={NavItem} title="FAQS" id="dropdown-basic-button">
-                            <Dropdown.Menu id="nav-dropdown-menu">
-                                <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="faq">Common FAQs</NavLink>
-                                <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="grading">Grading & Exams FAQ</NavLink>
-                            </Dropdown.Menu>
-                        </DropdownButton>
+                        <NavDropdown title="FAQS" id="dropdown-basic-button">
+                            <NavDropdown.Item as={NavLink} className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="faq">Common FAQs</NavDropdown.Item>
+                            <NavDropdown.Item as={NavLink} className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="grading">Grading & Exams FAQ</NavDropdown.Item>                   
+                        </NavDropdown>
                         
-                        <DropdownButton as={NavItem} title="Timetables" id="dropdown-basic-button">
-                            <Dropdown.Menu id="nav-dropdown-menu">
-                                <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="kidsclasses">Kids Timetables</NavLink>
-                                <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="adultsclasses">Adults Timetables</NavLink>
-                            </Dropdown.Menu>
-                        </DropdownButton>
+                        <NavDropdown title="Timetables" id="dropdown-basic-button">
+                            <NavDropdown.Item as={NavLink} className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="kidsclasses">Kids Timetables</NavDropdown.Item>
+                            <NavDropdown.Item as={NavLink} className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="adultsclasses">Adults Timetables</NavDropdown.Item>                            
+                        </NavDropdown>
 
                         <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')}to="contact">Contact</NavLink>   
                     </Nav>   
