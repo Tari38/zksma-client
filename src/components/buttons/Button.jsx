@@ -59,3 +59,11 @@ export const HertsVenuesButton = () => {
         </Button>
     )
 }
+
+export const PoliciesButton = () => {
+    return (
+        <Button as={NavLink} className="policies-btn" to="/policies">
+            Policies    
+        </Button>
+    )
+}

@@ -1,0 +1,64 @@
+#policies-hero {
+    background:  var(--aluminium-dark-red-gradient);    
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+    color: #fff;
+}
+
+.btn-group {
+    border: none;
+}
+
+.member-btn, .home-btn {
+    display: flex;
+    flex-direction: column;
+    background: var(--black);
+    border: 1px dotted #fff;
+    width: 250px;
+    min-height: 50px;
+    margin: auto;
+    text-transform: uppercase;
+    text-shadow: #000 2px 2px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.member-btn:hover, .home-btn:hover {
+    background-color: red;
+    border: none;
+}
+
+#policies-agreement {
+    padding: 20px;
+    background-color: #000;
+}
+
+.member-agreement, .payment-policy, .cancellation-policy, .membership-cancellation-policy {
+    border: dashed 1px red;
+    margin: 10px auto;
+}
+
+.card-footer-btn {
+    background-color: #000;
+    padding: 10px;
+}
+
+.card-footer-btn:hover {
+    border: none;
+    background-color: red;
+}
+
+#subscribe {
+    background-color: #000;
+}
+#subscribe h1 {
+    color: #fff;
+}

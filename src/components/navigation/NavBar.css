@@ -82,7 +82,7 @@
 }
 
 .offcanvas-menu {
-    background: var(--aluminium-dark-red-gradient);
+    background: inherit;
     color: #fff;
     text-align: center;
 }

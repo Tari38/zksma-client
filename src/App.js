@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Layout } from './components';
-import { About, AdultsClasses, Contact, FAQ, Fees, KidsClasses, Home, GradingExams, NotFound, HavocGrappling, ScorpionMuayThai } from './pages';
+import { About, AdultsClasses, Contact, FAQ, Fees, KidsClasses, Home, GradingExams, NotFound, HavocGrappling, ScorpionMuayThai, Policies } from './pages';
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
           <Route path="notfound" element={<NotFound />} />
           <Route path="locations" element={<About />} />
           <Route path="herts-locations" element={<About />} />
+          <Route path="policies" element={<Policies />} />
         </Route>
       </Routes>
     </div>

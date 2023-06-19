@@ -3,6 +3,7 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FooterAddressCard, FooterSocialCard } from "../cards/FooterCards";
 import { ToTopButton } from "../buttons/Button";
+import { PoliciesButton } from "../buttons/Button";
 import footerLogo from "../../assets/logos/footer-logo.png";
 import "./css/Footer.css";
 
@@ -16,6 +17,11 @@ export default function Footer() {
                 <Row className="footer-card-group">
                     <Col>
                         <FooterAddressCard />
+                    </Col>
+                    <Col>
+                        <h6>Legal</h6>
+                        <PoliciesButton />
+                        
                     </Col>
                     <Col>
                         <FooterSocialCard />

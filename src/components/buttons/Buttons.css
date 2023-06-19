@@ -37,7 +37,7 @@
     border: none;
 }
 
-.classes-btn {
+.classes-btn, .policies-btn {
     background: var(--dark-red);
     border: none;
     text-transform: uppercase;
@@ -50,6 +50,12 @@
     background-image: none;
     background-color: #000;
     border: none;
+}
+.policies-btn {
+    padding: 10px;
+}
+.policies-btn:hover {
+    background-color: #000;
 }
 
 .bucks-btn, .herts-btn {

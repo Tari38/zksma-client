@@ -10,3 +10,4 @@ export { default as NotFound } from "./NotFound";
 export { default as GradingExams } from "./GradingExams";
 export { default as HavocGrappling } from "./HavocGrappling";
 export { default as ScorpionMuayThai } from "./ScorpionMuayThai";
+export { default as Policies } from "./legal/Policies";
