@@ -87,6 +87,10 @@ section #havoc, section #scorpion {
 }
 
 #location-maps {
-    background: var(--red-darkred-gradient);
+    background-image: url("../../assets/backgrounds/dojo-bg.webp");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     color: #fff;
 }

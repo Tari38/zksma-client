@@ -1,3 +1,9 @@
+#locations, #herts-locations {
+    background-color: #0000009a;
+    width: 100%;
+    padding: 10px;
+}
+
 .locations-card-group {
     width: 100%;
     border: 2px solid red;
