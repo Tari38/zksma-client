@@ -1,7 +1,7 @@
 import { CardGroup } from "react-bootstrap";
 import { DragonsCard, JuniorsMACard, MiniNinjasCard, TeensMACard, SENMACard, HomeEdMACard, SchoolsMACard } from "../components/cards/KidsClassesCards";
 import { SelectedVenue } from "../components/schedule/kids/SelectedVenue";
-// import LocationMaps from "../components/schedule/maps/LocationMaps";
+import InterestedCard from "../components/cards/InterestedCard";
 import "./css/Locations.css";
 
 
@@ -28,7 +28,9 @@ export default function KidsClasses() {
         <section id="kids-schedules">            
             <SelectedVenue />            
         </section>
-        
+        <section id="free-trial-promo">
+            <InterestedCard />
+        </section>
         </>       
     )
 }

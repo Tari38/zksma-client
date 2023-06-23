@@ -22,7 +22,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
-#bucks:hover, #herts:hover {
-    transform: none;
+
+/* FREE TRIAL */
+
+#interested-card {
+    background: var(--aqua-emerald-gradient);
 }
+
+.interested-card-header, .interested-card-subtitle {
+    color: #000;
+}
+
+.interested-card-body {
+    margin: auto;
+}
+

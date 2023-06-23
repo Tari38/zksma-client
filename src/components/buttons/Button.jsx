@@ -12,9 +12,9 @@ export const ToTopButton = () => {
     )
 }
 
-export const FreeTrialButton = () => {
+export const FreeTrialButton = () => {  
     return (
-        <Button className="free-trial-btn" href="https://www.smallshout.co.uk/members/register/new_registration.aspx?oid=1456145&I=0">
+        <Button className="free-trial-btn">
             Book a Free Trial
         </Button>
     )
@@ -22,7 +22,7 @@ export const FreeTrialButton = () => {
 
 export const MemberAreaButton = () => {
     return (
-        <Button className="members-btn" target="__blank" href="https://www.smallshout.co.uk/members/memberslogon.aspx?oid=1456145">
+        <Button className="members-btn" target="__blank" href="https://www.smallshout.co.uk/members/">
             Go To Member Area
         </Button>
     )

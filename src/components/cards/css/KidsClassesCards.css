@@ -28,3 +28,13 @@
 .class-card-subtitle {
     background-color: transparent;
 }
+
+#card-teen > .class-card-text {
+    color: #fff;
+}
+#card-teen > .class-card-subtitle {
+    color: #fff;
+}
+#card-teen > .class-card-header {
+    color: #fff;
+}

@@ -8,7 +8,7 @@ export default function NavBar() {
     return (
         <div id="top">
             
-            <Navbar expand="md" collapseOnSelect className="navbar">
+            <Navbar expand="lg" collapseOnSelect className="navbar">
                 <Container fluid>  
                 <Navbar.Brand>
                     <img src={NavLogo} className="nav-logo" alt=""></img>

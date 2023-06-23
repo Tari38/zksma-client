@@ -1,22 +1,22 @@
-import React from "react";
 import { Col, Row } from "react-bootstrap";
 import "./pages.css";
 import "./css/Home.css";
-import FreeTrialModal from "../components/modals/Free_Trial";
 import Contact from "./Contact";
-import { FreeTrialButton, MemberAreaButton, KidsClassesButton, AdultsClassesButton } from "../components/buttons/Button";
+import { MemberAreaButton, KidsClassesButton, AdultsClassesButton } from "../components/buttons/Button";
+import FreeTrialModal from "../components/modals/FreeTrialModal";
 import { BucksCard, HertsCard } from "../components/cards/Card";
+import InterestedCard from "../components/cards/InterestedCard";
 
 
 export default function Home() {
-    const [modalShowFreeTrial, setModalShowFreeTrial] = React.useState(false);
+    
     return (
         <>
         <main>
             <section id="cta">
                 <Row className="home-hero">
                     <Col id="home-hero-col">
-                        <FreeTrialButton />
+                        <FreeTrialModal />
                     </Col>
                     <Col id="home-hero-col">
                         <MemberAreaButton /> 
@@ -50,12 +50,12 @@ export default function Home() {
                         <HertsCard />
                     </Col>                
             </section>
+            <section id="free-trial-promo">
+            <InterestedCard />
+        </section>
         </main>
         
-        <FreeTrialModal
-            show={modalShowFreeTrial}
-            onHide={() => setModalShowFreeTrial(false)}
-        />
+        
       </>
     )
 }

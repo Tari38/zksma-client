@@ -9,6 +9,9 @@ export const DragonsCard = () => {
                 Little Dragons
             </Card.Header>
             <Card.Img className="class-card-logo" src={DragonLogo}></Card.Img>
+            <Card.Text className="class-card-text">
+                Our Little Dragons classes are aimed at preschool children, aged 3-4. They are ideal for children who have an interest in the arts and give them a brilliant springboard into our Mini Ninjas group.
+            </Card.Text>
             <Card.Footer className="class-card-subtitle">
                 3 - 4 year olds
             </Card.Footer>
@@ -23,6 +26,9 @@ export const MiniNinjasCard = () => {
                 Mini Ninjas
             </Card.Header>
             <Card.Img className="class-card-logo" src={MiniNinjaLogo}></Card.Img>
+            <Card.Text className="class-card-text">
+                Mini Ninjas classes give our students a really good introduction to all the basic elements of our martial arts programme. We cover three main units in our programme; Basics, Throws and Self Defence. Most students stay in this class for about 2 to 3 years and then progress to our Junior MA group.
+            </Card.Text>
             <Card.Footer className="class-card-subtitle">
                 5 - 7 year olds
             </Card.Footer>
@@ -37,6 +43,9 @@ export const JuniorsMACard = () => {
                 Junior MA
             </Card.Header>
             <Card.Img className="class-card-logo" src={KidLogo}></Card.Img>
+            <Card.Text className="class-card-text">
+                This class adds more demands on the students ability and of course it goes without saying we progress onto more technical aspects suitable for their age. Again, students work through the three main units; Basics, Throws and Kata.
+            </Card.Text>
             <Card.Footer className="class-card-subtitle">
                 8 - 11 year olds
             </Card.Footer>
@@ -51,8 +60,11 @@ export const TeensMACard = () => {
                 Teen MA
             </Card.Header>
             <Card.Img className="class-card-logo" src={FooterLogo}></Card.Img>
+            <Card.Text className="class-card-text">
+                Lastly, our Teen classes give our students a really good introduction to all the basic elements of our martial arts, plus we cover three main aspects in our programme; kick boxing, grappling with submissions and self defence.
+            </Card.Text>
             <Card.Footer className="class-card-subtitle">
-                12 - 17 year olds
+                12 - 16 year olds
             </Card.Footer>
         </Card>
     )

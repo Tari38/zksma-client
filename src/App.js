@@ -5,7 +5,7 @@ import { About, AdultsClasses, Contact, FAQ, Fees, KidsClasses, Home, GradingExa
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" fluid>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

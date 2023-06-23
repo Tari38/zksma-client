@@ -1,6 +1,7 @@
 import { CardGroup } from "react-bootstrap";
 import { HavocCard, TaijutsuCard, ScorpionCard } from "../components/cards/AdultsClassesCards";
-import ScheduleHQ from "../components/schedule/adults/schedule_hq"
+import ScheduleHQ from "../components/schedule/adults/schedule_hq";
+import InterestedCard from "../components/cards/InterestedCard";
 
 export default function AdultsClasses() {
     return (
@@ -18,6 +19,9 @@ export default function AdultsClasses() {
         <br />
         <section id="adults-schedules">
             <ScheduleHQ />
+        </section>
+        <section id="free-trial-promo">
+            <InterestedCard />
         </section>
         </>
     )

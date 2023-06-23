@@ -13,14 +13,14 @@
     
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157726967-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157726967-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'UA-157726967-1');
-    </script> -->
+    </script>
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,6 +42,7 @@
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0&appId=505781013343178&autoLogAppEvents=1" nonce="L7Ll3noF"></script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <div id="modal-root"></div>
     
     <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin></script>
     
@@ -55,6 +56,36 @@
 
     <script src="https://kit.fontawesome.com/eb74a2a952.js" crossorigin="anonymous"></script>
     
-    
+    <script type='text/javascript' data-cfasync='false'>
+      window.purechatApi = { 
+        l: [], 
+        t: [], 
+        on: function () { 
+          this.l.push(arguments); 
+        } 
+      }; 
+      (function () { 
+        var done = false; 
+        var script = document.createElement('script'); 
+        script.async = true; 
+        script.type = 'text/javascript'; 
+        script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; 
+        document.getElementsByTagName('HEAD').item(0).appendChild(script); 
+        script.onreadystatechange = script.onload = function (e) { 
+          if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { 
+            var w = new PCWidget({
+              c: 'df12d46b-b377-497d-a168-44699755edfa', f: true }); 
+              done = true; 
+            } 
+          }; 
+        })();
+      </script>
+
+      <script src="https://www.google.com/recaptcha/api.js"></script>
+      <script>
+        function onSubmit(token) {
+          document.getElementById("free-trial-form").submit();
+        }
+      </script>
   </body>
 </html>

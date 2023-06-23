@@ -14,9 +14,18 @@
     padding: 10px;
 }
 
+.location-card-subtitle {
+    color: #000;
+}
+
 .location-card:hover {
     transition: .5s ease;
     box-shadow: 4px 4px 6px rgb(71, 59, 59);
+}
+
+.location-card-text {
+    color: #000;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 760px) {

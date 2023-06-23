@@ -1,5 +1,6 @@
 import "./css/FaQGradings.css";
 import { Col, Row, Card, CardGroup } from "react-bootstrap";
+import InterestedCard from "../components/cards/InterestedCard";
 import CalendarIcon from "../assets/icons/calendar-icon.png";
 
 export default function GradingsExams() {
@@ -8,8 +9,7 @@ export default function GradingsExams() {
             <div className="hero">
                 <h1>Grading & Exams FAQ's</h1>
             </div>
-        <div className="page">
-            {/* <Container fluid > */}
+        <div className="page">           
                 <Row className="row">
                     <Col auto>
                         <article className="article">
@@ -225,7 +225,9 @@ export default function GradingsExams() {
                     </Col>
                     <Col className="img7-col" auto></Col>
                 </Row>
-        {/* </Container> */}
+                <section id="free-trial-promo">
+                    <InterestedCard />
+                </section>
     </div>
     </>
     )

@@ -1,6 +1,5 @@
 @import url("./styles/theme.css");
 
 .App {
-  text-align: center;
-  transition: all .5s ease;
+  text-align: center;  
 }

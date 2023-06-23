@@ -1,4 +1,5 @@
 import FeesCards from "../components/cards/FeesCards";
+import InterestedCard from "../components/cards/InterestedCard";
 import "./css/Fees.css";
 
 export default function Fees() {
@@ -17,6 +18,9 @@ export default function Fees() {
         </section>
         <section id="card-fees">
             <FeesCards />
+        </section>
+        <section id="free-trial-promo">
+            <InterestedCard />
         </section>
         </>
     )

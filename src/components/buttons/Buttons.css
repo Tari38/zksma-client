@@ -29,7 +29,7 @@
     font-weight: 700;
     font-size: 1.2rem;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 .free-trial-btn:hover, .members-btn:hover {
     background-image: none;
@@ -37,6 +37,7 @@
     border: none;
 }
 
+.classes-btn { margin-bottom: 0 }
 .classes-btn, .policies-btn {
     background: var(--dark-red);
     border: none;
@@ -59,9 +60,10 @@
 }
 
 .bucks-btn, .herts-btn {
-    width: 99%;
+    width: 100%;
     border-radius: none;
     background: var(--red-darkred-gradient);
+    opacity: 0.9;
 }
 
 .bucks-btn:hover, .herts-btn:hover {

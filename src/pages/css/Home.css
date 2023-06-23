@@ -14,6 +14,7 @@ main {
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
+    transition: all 1s ease-in-out;
 }
 
 #cta {
@@ -25,6 +26,7 @@ main {
     justify-content: center;
     align-items: center;
     margin: auto;
+    transition: all 1s ease-in-out;
 }
 
 #home-hero-col {
@@ -33,6 +35,7 @@ main {
     margin: auto; 
     width: auto;   
     background: inherit;
+    transition: all 1s ease-in-out;
 }
 
 
@@ -41,7 +44,7 @@ main {
 .classes-heading-container {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px 0;
-    width: 99%;
+    width: 100%;
 }
 .classes-heading {
     color: #fff;
@@ -67,14 +70,14 @@ main {
 
 #venues {
     display: flex;
-    flex-direction: row;
-    max-width: 100%;
+    width: 100%;
     margin: auto;
-    background-image: url("../../assets/backgrounds/dojo-bg.webp");  
     justify-content: center;  
     align-items: center;
 }
 .venue-col {
+    display: flex;
+    width: 50%;
     margin: auto;
     justify-content: center;  
     align-items: center;

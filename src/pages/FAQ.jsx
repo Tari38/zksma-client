@@ -1,4 +1,5 @@
 import { Accordion } from "react-bootstrap";
+import InterestedCard from "../components/cards/InterestedCard";
 import "./pages.css";
 
 export default function FAQ() {
@@ -45,6 +46,9 @@ export default function FAQ() {
                     </Accordion.Item>
                 </Accordion>
             </section>
+            <section id="free-trial-promo">
+            <InterestedCard />
+        </section>
         </div>
     )
 }
